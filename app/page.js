@@ -4,8 +4,9 @@ import Navigation from './Components/Navigation'
 export default function Home() {
   return (
     <div>
-      <div className='flex justify-center '>
-        <img  src=" bg1.jpg" alt="aceite" className=' w-full' />
+
+      <div className='flex justify-center w-full h-[735px] '>
+        <img  src=" bg1.jpg" alt="aceite" className='w-full object-cover' />
       </div>
 
       <div className='flex flex-col gap-3 m-auto pt-20 pb-20 w-3/4'>
