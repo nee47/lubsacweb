@@ -3,36 +3,31 @@ import Link from "next/link";
 
 const links = [
   {
-    label: "Home",
+    label: "INICIO",
     route: "/",
   },
   {
-    label: "Productos",
+    label: "PRODUCTOS",
     route: "/productos",
   },
   {
-    label: "Nosotros",
+    label: "NOSOTROS",
     route: "/acerca",
   },
 ];
 
 function Navigation() {
   return (
-    <header>
-      <img
-        src="wsp.png"
-        alt="contacto wsp"
-        className=" fixed h-9 right-1 top-5"
-      />
+    <header className="flex">
 
-      <div className="flex items-center px-20 gap-x-24 bg-black">
+      <div className="flex items-center  gap-x-8 bg-white px-10 py-2">
         <img className=" h-24 w-fit" src="logo.jpg" alt="LUBESAC" />
-        <div className=" text-3xl font-bold text-yellow-500">
+        <div className=" text-2xl font-bold text-yellow-500 ">
           Lubricantes Especiales del Perú
         </div>
       </div>
 
-      <nav className=" flex flex-col bg-black ">
+      <nav className=" flex flex-col bg-gray-800 w-full justify-end">
         <ul className="flex m-5 gap-x-10 self-center text-white">
           {links.map(({ label, route }) => (
             <li key={route} className="px-4">

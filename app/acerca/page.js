@@ -8,6 +8,10 @@ mismo modo aprovechar esta oportunidad para presentarle a nuestra Empresa,
 “LUBRICANTES ESPECIALES DEL PERU SAC", con RUC: 20523985842
 
     </p>
+
+    <div>
+      Contacto 
+    </div>
     </div>
   )
 }
