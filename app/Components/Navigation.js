@@ -18,23 +18,18 @@ const links = [
 
 function Navigation() {
   return (
-    <header className="flex">
-
-      <div className="flex items-center  gap-x-8 bg-white px-10 py-2">
-        <img className=" h-24 w-fit" src="logo.jpg" alt="LUBESAC" />
-        <div className=" text-2xl font-bold text-yellow-500 ">
-          Lubricantes Especiales del Perú
+    <header>
+      <nav className=" flex w-full justify-center py-3">
+        <div className="flex items-center  gap-x-4 bg-white max-w-sm border border-black ">
+          <img className=" h-20 w-auto" src="logo.jpg" alt="LUBESAC" />
+          <div className=" text-xl font-medium text-black leading-5">
+            Lubricantes Especiales del Perú
+          </div>
         </div>
-      </div>
-
-      <nav className=" flex flex-col bg-gray-800 w-full justify-end">
-        <ul className="flex m-5 gap-x-10 self-center text-white">
+        <ul className="flex m-5 items-center gap-x-10 border border-black ">
           {links.map(({ label, route }) => (
             <li key={route} className="px-4">
-              <Link
-                className=" block h-8 text-white  hover:text-yellow-500"
-                href={route}
-              >
+              <Link className=" block h-8  hover:text-yellow-500" href={route}>
                 {label}
               </Link>
             </li>

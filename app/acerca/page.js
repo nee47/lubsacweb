@@ -10,7 +10,7 @@ mismo modo aprovechar esta oportunidad para presentarle a nuestra Empresa,
     </p>
 
     <div>
-      Contacto 
+      Contacto  
     </div>
     </div>
   )
