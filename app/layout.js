@@ -15,7 +15,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={monserrat.className}>
         <Navigation />
-        <div className="flex flex-col min-h-screen">{children}</div>
+        <main className="min-h-screen">{children}</main>
         <Footer></Footer>
       </body>
     </html>

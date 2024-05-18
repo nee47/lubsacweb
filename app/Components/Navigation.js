@@ -26,23 +26,23 @@ function Navigation() {
 
   return (
     <header>
-      <nav className="flex flex-col  md:flex-row w-full justify-center py-3">
+      <nav className="flex flex-col  md:flex-row w-full items-center md:justify-around py-4">
         <Link href="/">
           <div className="flex items-center  gap-x-4 bg-white max-w-sm ">
-            <img className=" h-20 w-auto" src="logo.jpg" alt="LUBESAC" />
-            <div className=" text-xl max-w- font-medium text-black leading-5">
-              Lubricantes Especiales del Perú
+            <img className=" h-16 w-auto" src="logo.jpg" alt="LUBESAC" />
+            <div className=" text-md max-w-44 font-medium text-black leading-5">
+              <span className="font-bold">Lubricantes</span> Especiales del Perú
             </div>
           </div>
         </Link>
-
-        <div class="md:hidden absolute right-6 top-32 z-30">
+        {/* THE BURGUER MENU */}
+        <div className="md:hidden absolute right-6 top-4 z-30">
           <button
             onClick={toggleNav}
-            class="navbar-burger flex items-center text-black p-3"
+            className="navbar-burger flex items-center text-black p-3"
           >
             <svg
-              class="block h-8 w-8 fill-current"
+              className="block h-8 w-8 fill-current"
               viewBox="0 0 20 20"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -54,16 +54,14 @@ function Navigation() {
 
         <ul
           className={`${
-            clicked
-              ? "flex flex-col fixed size-full top-0  m-auto z-20 bg-white  "
-              : "hidden"
-          } md:flex m-5 items-center gap-x-10 px-12`}
+            clicked ? " size-full top-0  m-auto z-20 bg-white  " : "hidden"
+          } flex flex-col fixed md:flex md:static md:flex-row m-5 items-center justify-center md:size-auto md:m-0 gap-y-10  gap-x-10 px-12`}
         >
           {links.map(({ label, route }) => (
             <li key={route}>
               <Link
                 onClick={toggleNav}
-                className=" block h-8  hover:text-yellow-500"
+                className=" h-8 text-sm  hover:text-yellow-500 py-4 px-24 md:px-0"
                 href={route}
               >
                 {label}
