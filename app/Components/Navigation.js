@@ -36,7 +36,7 @@ function Navigation() {
           </div>
         </Link>
         {/* THE BURGUER MENU */}
-        <div className="md:hidden absolute right-6 top-4 z-30">
+        <div className="md:hidden fixed right-6 top-4 z-30">
           <button
             onClick={toggleNav}
             className="navbar-burger flex items-center text-black p-3"
