@@ -1,6 +1,8 @@
 "use client";
 import React, { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
+import logo from "@/public/logo.png";
 
 function Navigation() {
   const links = [
@@ -16,6 +18,14 @@ function Navigation() {
       label: "NOSOTROS",
       route: "/acerca",
     },
+    {
+      label: "SERVICIOS",
+      route: "/servicios",
+    },
+    {
+      label: "CONTACTO",
+      route: "/contacto",
+    },
   ];
 
   const [clicked, setClicked] = useState(false);
@@ -26,10 +36,14 @@ function Navigation() {
 
   return (
     <header>
-      <nav className="flex flex-col  md:flex-row w-full items-center md:justify-around py-4">
+      <nav className="flex flex-col  md:flex-row w-full items-center md:justify-around py-4 border-b border-black/30">
         <Link href="/">
-          <div className="flex items-center  gap-x-4 bg-white max-w-sm ">
-            <img className=" h-16 w-auto" src="logo.jpg" alt="LUBESAC" />
+          <div className="flex items-center  gap-x-4 bg-white max-w-sm rounded-sm">
+            <Image
+              className=" h-16 w-auto rounded-sm"
+              src={logo}
+              alt="LUBESAC"
+            />
             <div className=" text-md max-w-44 font-medium text-black leading-5">
               <span className="font-bold">Lubricantes</span> Especiales del Perú
             </div>
@@ -55,13 +69,13 @@ function Navigation() {
         <ul
           className={`${
             clicked ? " size-full top-0  m-auto z-20 bg-white  " : "hidden"
-          } flex flex-col fixed md:flex md:static md:flex-row m-5 items-center justify-center md:size-auto md:m-0 gap-y-10  gap-x-10 px-12`}
+          } flex flex-col fixed md:flex md:static md:flex-row  items-center justify-center md:size-auto md:m-0 gap-y-10  gap-x-4 px-12`}
         >
           {links.map(({ label, route }) => (
             <li key={route}>
               <Link
                 onClick={toggleNav}
-                className=" h-8 text-sm  hover:text-yellow-500 py-4 px-24 md:px-0"
+                className=" h-8 text-sm  py-4 px-24 md:px-1 md:hover:text-yellow-600 rounded-sm"
                 href={route}
               >
                 {label}

@@ -1,10 +1,16 @@
 import Link from "next/link";
+import Image from "next/image";
+import bg from "@/public/bg1.jpg";
 
 export default function Hero() {
   return (
     <div className="relative">
-      <div className="flex justify-center w-full h-[735px] ">
-        <img src=" bg1.jpg" alt="aceite" className="w-full object-cover" />
+      <div className="flex justify-center w-full h-[680px] ">
+        <Image
+          src={bg}
+          alt="aceites industriales"
+          className="w-full object-cover"
+        />
       </div>
 
       <div className=" absolute top-1/4 left-1/4 h-1/2 w-80">
