@@ -6,8 +6,8 @@ import verkol from "@/public/verkol.jpg";
 
 function page() {
   return (
-    <div className="flex flex-col ">
-      <section className="w-full  bg-yellow-500/30 py-12 px-16 md:px-44">
+    <div className="flex flex-col">
+      <section className="w-full  bg-yellow-500/30 py-12 px-16 md:px-[15%]">
         <h1 className=" text-2xl font-bold my-2 px-4 ">¿QUIENES SOMOS?</h1>
         <p className="text-base md:text-lg px-4 max-w-3xl">
           LUBRICANTES ESPECIALES DEL PERU SAC, con RUC: 20523985842. Es uno de
@@ -18,7 +18,7 @@ function page() {
         </p>
       </section>
 
-      <div className="flex  flex-col items-center  lg:flex-row  px-10 py-10 md:px-44 md:py-16 gap-y-4 gap-x-4 ">
+      <div className="flex  flex-col items-center  lg:flex-row  px-10 py-10 md:px-[15%] md:py-16 gap-y-4 gap-x-4 ">
         <div className=" min-w-[370px] w-[370px] grid grid-cols-2 items-center  gap-4 ">
           <Image src={petro} alt="" className="min-w-32 w-32 h-auto" />
           <Image src={adinol} alt="" className="min-w-44 w-44 h-auto" />
@@ -40,7 +40,7 @@ function page() {
         </div>
       </div>
 
-      <div className="w-full py-20 px-10 md:px-44 ">
+      <div className="w-full py-20 px-10 md:px-[15%] ">
         <p className=" w-44  text-3xl  font-bold  ">+10 AÑOS EN EL MERCADO</p>
 
         <ul className="py-6">
