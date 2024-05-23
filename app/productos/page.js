@@ -15,12 +15,11 @@ function page() {
       </section>
 
       <div className=" my-14 grid md:grid-cols-3 gap-x-4 md:max-w-2xl">
-        <ProductCard title="CATEGORIA DEL PRODUCTO" imgPath={c1} />
-        <ProductCard title="CATEGORIA DEL PRODUCTO" imgPath={c1} />
-        <ProductCard title="CATEGORIA DEL PRODUCTO" imgPath={c1} />
-        <ProductCard title="CATEGORIA DEL PRODUCTO" imgPath={c1} />
-        <ProductCard title="CATEGORIA DEL PRODUCTO" imgPath={c1} />
-        <ProductCard title="CATEGORIA DEL PRODUCTO" imgPath={c1} />
+        <ProductCard title="ACEITES DE PROCESO" imgPath={c1} />
+        <ProductCard title="ACEITES SOLUBLES" imgPath={c1} />
+        <ProductCard title="LUBRICANTE DE ELECTROEROSIÓN" imgPath={c1} />
+        <ProductCard title="GRASAS" imgPath={c1} />
+        <ProductCard title="HIDRAULICOS Y PLASTICOS" imgPath={c1} />
       </div>
 
       <div className=" flex flex-col items-center gap-y-6  py-20">

@@ -1,3 +1,9 @@
+import Services from "../Components/Services";
+
 export default function page() {
-  return <div>SERVICIOS</div>;
+  return (
+    <div>
+      <Services />
+    </div>
+  );
 }
