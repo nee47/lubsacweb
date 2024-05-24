@@ -4,14 +4,14 @@ import logo from "@/public/logo.png";
 
 export default function page() {
   return (
-    <div className="flex flex-col items-center">
+    <div className="flex flex-col items-center gap-y-6">
       <h1 className="font-bold text-2xl  w-full text-center bg-slate-300 py-6">
         Contacto
       </h1>
 
-      <div className="flex items-center  gap-x-4 bg-white max-w-sm rounded-sm">
-        <Image className=" h-16 w-auto rounded-sm" src={logo} alt="LUBESAC" />
-        <div className=" text-md max-w-44 font-medium text-black leading-5">
+      <div className="flex items-center  gap-x-4 bg-white max-w-sm rounded-sm ">
+        <Image className=" h-32 w-auto rounded-sm" src={logo} alt="LUBESAC" />
+        <div className=" text-xl max-w-56 font-medium text-black leading-5">
           <span className="font-bold">Lubricantes</span> Especiales del Perú
         </div>
       </div>
