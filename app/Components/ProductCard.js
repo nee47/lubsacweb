@@ -11,6 +11,7 @@ export default function ProductCard({ title, imgPath }) {
           height={1400}
           placeholder="blur"
           alt="producto"
+          className="min-w-[250px]"
         />
         <div className="flex absolute inset-0  opacity-0 bg-black md:hover:opacity-80">
           <Link

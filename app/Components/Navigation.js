@@ -2,33 +2,9 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import Ddmenu from "./Ddmenu";
 import logo from "@/public/logo.png";
 
 function Navigation() {
-  const links = [
-    {
-      label: "INICIO",
-      route: "/",
-    },
-    {
-      label: "PRODUCTOS",
-      route: "/productos",
-    },
-    {
-      label: "NOSOTROS",
-      route: "/acerca",
-    },
-    {
-      label: "SERVICIOS",
-      route: "/servicios",
-    },
-    {
-      label: "CONTACTO",
-      route: "/contacto",
-    },
-  ];
-
   const [clicked, setClicked] = useState(false);
   const [showDropdown, setShowDropdown] = useState(false);
 
@@ -73,42 +49,28 @@ function Navigation() {
             clicked ? "size-full top-0  m-auto z-20 bg-white  " : "hidden"
           } flex flex-col fixed md:flex md:static md:flex-row  items-center justify-center md:size-auto md:m-0 gap-y-10  gap-x-4 px-12`}
         >
-          {/* {links.map(({ label, route }) => (
-            <li key={route}>
-              <Link
-                onClick={toggleNav}
-                className=" h-8 text-sm  py-4 px-24 md:px-1 md:hover:text-yellow-600 rounded-sm"
-                href={route}
-              >
-                {label}
-              </Link>
-            </li>
-          ))} */}
-
           <Link onClick={toggleNav} href="/">
             <div className=" text-sm  py-2 px-24 md:px-1 md:hover:text-yellow-600 rounded-sm">
               INICIO
             </div>
           </Link>
 
-          <Link
-            onClick={toggleNav}
-            href="/productos"
-            className="relative group"
-          >
-            <div className="text-sm  py-2 px-24 md:px-1  md:hover:text-yellow-600 rounded-sm ">
-              PRODUCTOS
-            </div>
+          <div className="relative group">
+            <Link onClick={toggleNav} href="/productos">
+              <div className="text-sm  py-2 px-24 md:px-1  md:hover:text-yellow-600 rounded-sm ">
+                PRODUCTOS
+              </div>
+            </Link>
 
             <Link onClick={toggleNav} href="/servicios">
-              <div className="mt-10 md:mt-0  md:top-8  md:invisible md:border-t-2 md:border-gray-300 md:absolute z-30  text-sm  md:py-2 px-24  md:px-3  md:hover:text-yellow-600  rounded-sm bg-white group-hover:visible">
+              <div className="mt-8 md:mt-0  py-2 md:top-8 md:invisible  md:border-t-2 md:border-gray-300 md:absolute z-30  text-sm  px-24  md:px-3  md:hover:text-yellow-600  rounded-sm bg-white group-hover:visible">
                 SERVICIOS
               </div>
             </Link>
-          </Link>
+          </div>
 
           <Link onClick={toggleNav} href="/acerca">
-            <div className=" z-30  text-sm  py-2 px-24 bg-white md:px-1  md:hover:text-yellow-600 rounded-sm hover:opacity-100">
+            <div className=" text-sm  py-2 px-24 bg-white md:px-1  md:hover:text-yellow-600 rounded-sm hover:opacity-100">
               NOSOTROS
             </div>
           </Link>
