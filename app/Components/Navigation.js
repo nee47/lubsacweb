@@ -75,6 +75,12 @@ function Navigation() {
             </div>
           </Link>
 
+          <Link onClick={toggleNav} href="/bases">
+            <div className=" text-sm  py-2 px-24 bg-white md:px-1  md:hover:text-yellow-600 rounded-sm hover:opacity-100">
+              INFORMACIÓN TÉCNICA
+            </div>
+          </Link>
+
           <Link onClick={toggleNav} href="/contacto">
             <div className=" text-sm  py-2 px-24 md:px-1 md:hover:text-yellow-600 rounded-sm">
               CONTACTO
