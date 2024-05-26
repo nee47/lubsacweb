@@ -6,7 +6,6 @@ import logo from "@/public/logo.png";
 
 function Navigation() {
   const [clicked, setClicked] = useState(false);
-  const [showDropdown, setShowDropdown] = useState(false);
 
   const toggleNav = () => {
     setClicked(!clicked);
@@ -77,7 +76,7 @@ function Navigation() {
 
           <Link onClick={toggleNav} href="/bases">
             <div className=" text-sm  py-2 px-24 bg-white md:px-1  md:hover:text-yellow-600 rounded-sm hover:opacity-100">
-              INFORMACIÓN TÉCNICA
+              INFORMACIÓN
             </div>
           </Link>
 
