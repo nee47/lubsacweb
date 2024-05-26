@@ -1,7 +1,7 @@
 import Image from "next/image";
-import petro from "@/public/petro_canada.png";
+import petro from "@/public/petro_canada.webp";
 import adinol from "@/public/adinol.png";
-import ngr from "@/public/ngr.jpg";
+import ngr from "@/public/ngr.webp";
 import verkol from "@/public/verkol.jpg";
 
 function page() {

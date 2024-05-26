@@ -1,0 +1,27 @@
+[
+  {
+    "categoria": "hidráulica y plástico",
+    "alias": "hidraulica-plastico",
+    "id": 1
+  },
+  {
+    "categoria": "grasas",
+    "alias": "grasas",
+    "id": 2
+  },
+  {
+    "categoria": "aceites de compresores",
+    "alias": "compresores",
+    "id": 3
+  },
+  {
+    "categoria": "aceites de proceso",
+    "alias": "aceite-proceso",
+    "id": 4
+  },
+  {
+    "categoria": "electroerosión",
+    "alias": "electroerosion",
+    "id": 5
+  }
+]

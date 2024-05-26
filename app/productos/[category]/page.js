@@ -1,14 +1,10 @@
-import { promises as fs } from "fs";
-import path from "path";
+import getData from "@/app/lib/getData";
 
-export function generateStaticParams() {
-  //const jsonpath = path.basename(path.dirname(process.cwd()));
+export async function generateStaticParams() {
+  const categories = await getData("categorias.json");
 
-  //const file = await fs.readFile(process.cwd() + '/app/data.json', 'utf8');
-  //const products = JSON.parse(null);
-  const products = [{ nombre: "grasas", descripcion: "hola" }];
-  return products.map((product) => ({
-    category: product.nombre,
+  return categories.map((c) => ({
+    category: c.alias,
   }));
 }
 
@@ -18,21 +14,24 @@ export default async function page({ params }) {
 
   const { category } = params;
 
-  const file = await fs.readFile(process.cwd() + "/public/data.json", "utf8");
-  const products = JSON.parse(file);
+  const products = await getData("data.json");
   const correctProducts = products.filter((p) => {
-    return p.categoria == category;
+    return p.alias == category;
   });
 
-  console.log(correctProducts);
-
   return (
-    <div className="">
-      {correctProducts.map((p) => (
-        <>
-          <h1>{p.nombre}</h1>
-          <p>descripcion</p>
-        </>
+    <div>
+      {correctProducts.map((p, index) => (
+        <div className="flex justify-center my-6" key={index}>
+          <div className=" bg-slate-200 rounded-md max-w-md min-w-[450px] p-4 shadow-sm">
+            <h1 className="font-bold text-2xl py-4">{p.nombre}</h1>
+            {p.descripcionDetallada.map((d, index) => (
+              <div key={index} className="">
+                <p className=" mb-4">{d}</p>
+              </div>
+            ))}
+          </div>
+        </div>
       ))}
     </div>
   );

@@ -47,7 +47,7 @@ function Footer() {
               clipRule="evenodd"
             ></path>
           </svg>
-          <p>+51XXXXXXXX</p>
+          <p>+51 981366304</p>
         </div>
         <div className="flex items-center mt-3 ">
           <a

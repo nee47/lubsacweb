@@ -18,15 +18,15 @@ export default function Services() {
         <div>
           <ContactCard
             desc=" Reducción  de sus consumos de  lubricantes "
-            bg="bg-sky-300"
+            bg="bg-yellow-100"
           ></ContactCard>
           <ContactCard
             desc=" Actualización  de  sus cartillas  de  Lubricación"
-            bg="bg-sky-300"
+            bg="bg-yellow-100"
           ></ContactCard>
           <ContactCard
             desc=" Correcto asesoramiento para la utilización del producto"
-            bg="bg-sky-300"
+            bg="bg-yellow-100"
           ></ContactCard>
         </div>
       </div>

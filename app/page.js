@@ -37,9 +37,9 @@ export default function Home() {
       <div className=" my-16 mx-auto">
         <h2 className=" text-center font-bold">MARCAS SOCIAS</h2>
         <div className=" flex flex-wrap items-center justify-center gap-16 mt-10 ">
-          <img className="h-28" src="petro_canada.png" alt="" />
+          <img className="h-28" src="petro_canada.webp" alt="" />
           <img className=" h-20" src="adinol.png" alt="" />
-          <img className="h-20" src="ngr.jpg  " alt="" />
+          <img className="h-20" src="ngr.webp  " alt="" />
           <img className="h-14 " src="verkol.jpg" alt="" />
         </div>
       </div>

@@ -1,6 +1,5 @@
-import ContactCard from "../Components/ContactCard";
 import Image from "next/image";
-import bg from "@/public/bg2.jpg";
+import bg from "@/public/bg2.webp";
 import bases1 from "@/public/bases1.jpg";
 
 export default function page() {

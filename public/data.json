@@ -1,13 +1,14 @@
 [
   {
     "categoria": "aceites de compresores",
+    "alias": "compresores",
     "nombre": "KOMPRESSOR DX 100-150-220",
     "descripcion-corta": [
       "SEMI SINTETICO",
       "TIEMPO DE SERVICIO 8OOO HORAS. SULLAIR",
       "INGERSOLL RAND ATLAS COPCO"
     ],
-    "descripcion-detallada": [
+    "descripcionDetallada": [
       "Dentro del medio de la refrigeración y aire acondicionado, la falla más frecuente de los compresores es la Alta Temperatura de Descarga",
       "Para estimar la temperatura en forma aproximada en los puertos de descarga, se puede proceder en la siguiente manera: Se mide primero la temperatura en grados Celsius (°C) en la tubería de descarga del compresor, entre doce y quince centímetros de la salida del compresor, a esta temperatura se le suman trece grados Celsius (°C), y nos dará la temperatura aproximada en el puerto de descarga.",
       "Normalmente si esta temperatura en la línea de descarga es de 135 °C, representa fallas. Si es de 120 °C está en un nivel de peligro de falla. Si es de 105 °C o menor, se puede esperar una larga vida del compresor"
@@ -16,13 +17,14 @@
 
   {
     "categoria": "aceites de compresores",
+    "alias": "compresores",
     "nombre": "KOMPRESSOR CX 32 46 68",
     "descripcion-corta": [
       "SEMI SINTETICO",
       "TIEMPO DE SERVICIO 8OOO HORAS. SULLAIR",
       "INGERSOLL RAND ATLAS COPCO"
     ],
-    "descripcion-detallada": [
+    "descripcionDetallada": [
       "Dentro del medio de la refrigeración y aire acondicionado, la falla más frecuente de los compresores es la Alta Temperatura de Descarga",
       "Para estimar la temperatura en forma aproximada en los puertos de descarga, se puede proceder en la siguiente manera: Se mide primero la temperatura en grados Celsius (°C) en la tubería de descarga del compresor, entre doce y quince centímetros de la salida del compresor, a esta temperatura se le suman trece grados Celsius (°C), y nos dará la temperatura aproximada en el puerto de descarga.",
       "Normalmente si esta temperatura en la línea de descarga es de 135 °C, representa fallas. Si es de 120 °C está en un nivel de peligro de falla. Si es de 105 °C o menor, se puede esperar una larga vida del compresor"
@@ -31,8 +33,9 @@
 
   {
     "categoria": "grasas",
+    "alias": "grasas",
     "nombre": "BRILLANT MP2 LITHIUM",
-    "descripcion-detallada": [
+    "descripcionDetallada": [
       "Grasa multipropósito",
       "Grasa de calcio azul, roja para la protección de equipos que se encuentren a la intemperie y evitar oxidación",
       "Jabones de calcio que repele el agua de Lluvia mar o presión."
@@ -41,8 +44,9 @@
 
   {
     "categoria": "grasas",
+    "alias": "grasas",
     "nombre": "NRG BRILLANT EP 2",
-    "descripcion-detallada": [
+    "descripcionDetallada": [
       "Engrase general de planta",
       "Jabones de litium.",
       "Velocidad 2500 rpm",
@@ -54,8 +58,9 @@
 
   {
     "categoria": "grasas",
+    "alias": "grasas",
     "nombre": "THERMATEX",
-    "descripcion-detallada": [
+    "descripcionDetallada": [
       "Temperatura operacional 260° C/500°F.",
       "Espesante de gel de silicio más aceite sintético.",
       " Utilizado en ruedas de carros de horno de fundición."
@@ -64,8 +69,9 @@
 
   {
     "categoria": "grasas",
+    "alias": "grasas",
     "nombre": "PRESICION XL EMB",
-    "descripcion-detallada": [
+    "descripcionDetallada": [
       "Altas revoluciones.",
       "Por razones de velocidad no saldrá despedida.",
       "factores de velocidad (NDm) > 500 000",
@@ -75,16 +81,18 @@
 
   {
     "categoria": "grasas",
+    "alias": "grasas",
     "nombre": "VULTREX OGL",
-    "descripcion-detallada": [
+    "descripcionDetallada": [
       "Donde por la alta carga la grasa es desplazada del piñón.",
       "Aplicación manual por brocha o sistema neumático, goteo."
     ]
   },
   {
     "categoria": "grasas",
+    "alias": "grasas",
     "nombre": "GRASA ALIMENTICIO",
-    "descripcion-detallada": [
+    "descripcionDetallada": [
       "Amplia variedad de aplicaciones para Maquinas de procesamiento de alimentos.",
       "Lubricante certificado como H1 por FDA."
     ]
@@ -92,10 +100,115 @@
 
   {
     "categoria": "grasas",
+    "alias": "grasas",
     "nombre": "BRILLANT LITHIUM EP 000",
-    "descripcion-detallada": [
+    "descripcionDetallada": [
       "Grasa semi liquida excelente bombeabilidad para asegurar la lubricación en los puntos finales.",
       "Aplicables en superficies de desplazamiento de guías y bancadas en tornos CNC y herramientas varias"
+    ]
+  },
+
+  {
+    "categoria": "hidráulica y plástico",
+    "alias": "hidraulica-plastico",
+    "nombre": "HYDRALUX HVI 22-32-46-68-100-150",
+    "descripcionDetallada": [
+      " Alta pureza de base(99.9%)",
+      "Alto índice de viscosidad + 125 IV.",
+      "Durabilidad en servicio 25000 horas",
+      "Con capacidad de soportar mayores temperaturas presiones y cargas.",
+      "Utilizado en sistemas de servobomba",
+      "Alta demulsificacion(pronta separación del agua)."
+    ]
+  },
+
+  {
+    "categoria": "hidráulica y plástico",
+    "alias": "hidraulica-plastico",
+    "nombre": "HYDRALUX AW 68 STD",
+    "descripcionDetallada": [
+      "Vida útil 8000 hras de servicio",
+      "Sistemas bomba motor",
+      "Donde los fabricantes sugieran aceites HLP"
+    ]
+  },
+
+  {
+    "categoria": "hidráulica y plástico",
+    "alias": "hidraulica-plastico",
+    "nombre": "AURHUM AW 68",
+    "descripcionDetallada": [
+      "Vida útil 6000 hras de servicio",
+      "Sistemas bomba motor",
+      "Donde los fabricantes sugieran aceites HLP"
+    ]
+  },
+
+  {
+    "categoria": "hidráulica y plástico",
+    "alias": "hidraulica-plastico",
+    "nombre": "GUIDE EP 32 68 120 220",
+    "descripcionDetallada": [
+      "Sugeridas por los fabricantes para lubricar las guias de friccion de cierre.",
+      "Lubricante que contiene agentes de gran adhesividad y resistencia al desgaste."
+    ]
+  },
+
+  {
+    "categoria": "hidráulica y plástico",
+    "alias": "hidraulica-plastico",
+    "nombre": "NRG OIL B LITHIUM EP 000",
+    "descripcionDetallada": [
+      "Para la lubricación de guias defriccion de cierre (brazos visagra) del equipo."
+    ]
+  },
+
+  {
+    "categoria": "hidráulica y plástico",
+    "alias": "hidraulica-plastico",
+    "nombre": "HOLYSTAR H 100 N",
+    "descripcionDetallada": [
+      "Como ya sabemos, no todos los polímeros son iguales. Una diferencia muy importante son las propiedades reológicas, existen polímeros termoplásticos que fluyen con mucha facilidad y por el contrario existen polímeros que se resisten a fluir. Para el caso de los polímeros que fluyen fácilmente",
+      "Para el caso de los polímeros que fluyen fácilmente, la presión de inyección es menor en comparación con los que fluyen menos, esto provoca que la unidad de cierre tenga que aplicar mayor fuerza para mantener el molde cerrado, durante la inyección del polímero. Mayor fuerza de cierre de la máquina, mayor energía por lo tanto, mas gasto de dinero.",
+      "De igual manera este ayudara a una mejor homogenizacion del batch logrando una mejor dispersión de los colorantes,logrando una coloración uniforme en el producto acabado."
+    ]
+  },
+
+  {
+    "categoria": "aceites de proceso",
+    "alias": "aceite-proceso",
+    "nombre": "HOLYSTAR H 100 N",
+    "descripcionDetallada": [
+      "Diseñado como aceite de proceso para la industria química.",
+      "Aceite de proceso para la industria del plástico PVC.",
+      "Recomendado como aceite plastificante en la industria del caucho.",
+      "NO TOXICO grado técnico pudiendo tener contacto con la piel y contacto indirecto con alimentos, pues cumple con la exigencia de la FDA USA (Administración de Drogas y Alimentos de los Estados Unidos): US FDA 21 CFR 178.36",
+      "Lubricante para laminación y estampación de envases metálicos.",
+      "Lubricante y antioxidante para equipos de procesamiento de alimentos (contacto incidental).",
+      "Excelente agente desmoldante para cerámica, productos de concreto y fibrocemento.",
+      "Para mejorar homogenización del batch en la industria plástica.",
+      "Componente para la fabricación de pinturas y tintas.",
+      "Desmoldante para diferentes industrias.",
+      "Sistemas de tratamiento térmico.",
+      "Aceite textil para maquinas rectas."
+    ]
+  },
+  {
+    "categoria": "electroerosión",
+    "alias": "electroerosion",
+    "nombre": "FLUIDO TFO II",
+    "descripcionDetallada": [
+      "Fluido naftenico Procedencia USA.",
+      "Acabados mate"
+    ]
+  },
+  {
+    "categoria": "electroerosión",
+    "alias": "electroerosion",
+    "nombre": "ELECTRA",
+    "descripcionDetallada": [
+      "Fluido parafínico procedencia España",
+      "Acabados mate"
     ]
   }
 ]
