@@ -1,5 +1,5 @@
+import c1 from "@/public/cilinder.jpg";
 import ProductCard from "@/app/Components/ProductCard";
-import c1 from "@/public/cilinder.webp";
 import getData from "../lib/getData";
 
 import Link from "next/link";
@@ -27,12 +27,6 @@ async function page() {
             productPath={"productos/" + p.alias}
           />
         ))}
-
-        {/* <ProductCard title="ACEITES DE PROCESO" imgPath={c1} />
-        <ProductCard title="ACEITES SOLUBLES" imgPath={c1} />
-        <ProductCard title="LUBRICANTE DE ELECTROEROSIÓN" imgPath={c1} />
-        <ProductCard title="GRASAS" imgPath={c1} />
-        <ProductCard title="HIDRAULICOS Y PLASTICOS" imgPath={c1} /> */}
       </div>
 
       <div className=" flex flex-col items-center gap-y-6  py-20">

@@ -13,9 +13,9 @@ function Navigation() {
 
   return (
     <header>
-      <nav className="flex flex-col  md:flex-row w-full items-center md:justify-around py-4 border-b border-black/30">
+      <nav className=" flex  flex-col md:flex-row w-full items-center md:justify-around py-4 border-b border-black/30">
         <Link href="/">
-          <div className="flex items-center  gap-x-4 bg-white max-w-sm rounded-sm">
+          <div className="flex items-center  gap-x-4 bg-white max-w-sm rounded-sm ">
             <Image
               className=" h-16 w-auto rounded-sm"
               src={logo}
@@ -27,25 +27,24 @@ function Navigation() {
           </div>
         </Link>
         {/* THE BURGUER MENU */}
-        <div className="md:hidden fixed right-6 top-4 z-30">
-          <button
-            onClick={toggleNav}
-            className="navbar-burger flex items-center text-black p-3"
+        <button
+          onClick={toggleNav}
+          className=" md:hidden  fixed right-4 top-4 z-30 text-black"
+        >
+          <svg
+            className="block  fill-current"
+            width="20px"
+            height="20px"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
           >
-            <svg
-              className="block h-8 w-8 fill-current"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <title>Mobile menu</title>
-              <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
-            </svg>
-          </button>
-        </div>
+            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+          </svg>
+        </button>
 
         <div
           className={`${
-            clicked ? "size-full top-0  m-auto z-20 bg-white  " : "hidden"
+            clicked ? "size-full top-0   z-20 bg-white  " : "hidden"
           } flex flex-col fixed md:flex md:static md:flex-row  items-center justify-center md:size-auto md:m-0 gap-y-10  gap-x-4 px-12`}
         >
           <Link onClick={toggleNav} href="/">

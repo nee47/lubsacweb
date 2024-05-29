@@ -26,10 +26,10 @@ function page() {
           <Image src={verkol} alt="" className="min-w-32 w-32 h-auto" />
         </div>
 
-        <div className=" max-w-md">
-          <p>
-            Contamos con una gran variedad y amplitud de productos NRG OIL
-            ENERGY, PETROCANADA(Canada),ADDINOL(Alemania)VERKOL(España).
+        <div className="w-full1">
+          <p className=" break-words ">
+            Contamos con una gran variedad y amplitud de productos NRG OIL,
+            ENERGY PETROCANADA (Canada), ADDINOL (Alemania), VERKOL (España).
           </p>
 
           <p className="py-5">

@@ -17,7 +17,7 @@ export default function page() {
           </div>
         </div>
 
-        <div className="px-8 py-16 lg:px-0">
+        <div className="py-16 px-[5%]">
           <h2 className="font-bold text-2xl mb-4">Tipos de acites Básicos</h2>
           <ul className="flex flex-col gap-y-2">
             <li>Aceites básicos API Grupo I</li>
@@ -35,7 +35,7 @@ export default function page() {
           </ul>
         </div>
 
-        <article>
+        <article className="px-[5%]">
           <h2 className="font-bold text-xl">Fabricación de aceites básicos</h2>
           <Image
             className=" max-w-48"

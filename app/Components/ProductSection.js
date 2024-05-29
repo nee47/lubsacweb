@@ -1,7 +1,7 @@
 import ProductCard from "./ProductCard";
 import Link from "next/link";
 import getData from "../lib/getData";
-import c1 from "@/public/cilinder.webp";
+import c1 from "@/public/cilinder.jpg";
 
 export default async function ProductSection() {
   const products = await getData("categorias.json");

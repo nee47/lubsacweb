@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import bg from "@/public/bg1.webp";
+import bg from "@/public/bg1.jpg";
 
 export default function Hero() {
   return (
@@ -10,10 +10,11 @@ export default function Hero() {
           src={bg}
           alt="aceites industriales"
           className="w-full object-cover"
+          priority
         />
       </div>
 
-      <div className=" absolute top-1/4 left-1/4 h-1/2 w-80">
+      <div className=" absolute top-1/4 left-1/4 h-1/2 max-w-80">
         <h1 className=" text-white text-4xl font-extrabold  select-none ">
           ESPECIALISTAS EN ACEITES INDUSTRIALES
         </h1>

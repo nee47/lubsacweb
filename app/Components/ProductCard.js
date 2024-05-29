@@ -7,9 +7,7 @@ export default function ProductCard({ title, imgPath, productPath }) {
       <div className="relative">
         <Image
           src={imgPath}
-          width={900}
-          height={1400}
-          placeholder="blur"
+          //placeholder="blur"
           alt="producto"
           className="min-w-[250px]"
         />
