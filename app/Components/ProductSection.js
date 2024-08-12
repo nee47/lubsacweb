@@ -14,7 +14,7 @@ export default async function ProductSection() {
           <ProductCard
             key={index}
             title={p.categoria}
-            imgPath={c1}
+            imgPath={p.img_src || c1}
             productPath={"productos/" + p.alias}
           />
         ))}

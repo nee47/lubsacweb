@@ -1,4 +1,5 @@
 import Hero from "./Components/Hero";
+import Image from "next/image";
 import ProductSection from "./Components/ProductSection";
 
 export default function Home() {
@@ -37,10 +38,22 @@ export default function Home() {
       <div className=" my-16 mx-auto">
         <h2 className=" text-center font-bold">MARCAS SOCIAS</h2>
         <div className=" flex flex-wrap items-center justify-center gap-16 mt-10 ">
-          <img className="h-28" src="petro_canada.webp" alt="" />
-          <img className=" h-20" src="adinol.png" alt="" />
-          <img className="h-20" src="ngr.webp  " alt="" />
-          <img className="h-14 " src="verkol.jpg" alt="" />
+          <Image
+            width={150}
+            height={50}
+            className=""
+            src="petro_canada.webp"
+            alt=""
+          />
+          <Image
+            width={250}
+            height={150}
+            className=""
+            src="ngr.webp  "
+            alt=""
+          />
+          <Image width={150} height={80} className="" src="q7.jpg" alt="" />
+          {/* <Image width={150} height={80} className="" src="adinol.png" alt="" /> */}
         </div>
       </div>
     </>

@@ -8,28 +8,19 @@ async function page() {
   const products = await getData("categorias.json");
 
   return (
-    <div className="flex flex-col items-center  ">
-      <section className="w-full  bg-gray-500/30 py-12 px-16 md:px-44 ">
-        <h1 className=" text-2xl font-bold my-2 px-4 ">GAMA DE PRODUCTOS</h1>
-        <p className="text-base md:text-lg px-4 max-w-2xl">
-          Usando el lubricante adecuado puede lograr un gran ahorro y, a la vez
-          maximizar la eficiencia de su maquinaria, prolongar la productividad
-          de su negocio y reducir el tiempo fuera de servicio.{" "}
-        </p>
-      </section>
-
+    <>
       <div className=" my-14 grid md:grid-cols-3 gap-x-4 md:max-w-2xl">
         {products.map((p, index) => (
           <ProductCard
             key={index}
             title={p.categoria}
-            imgPath={c1}
+            imgPath={p.img_src || c1}
             productPath={"productos/" + p.alias}
           />
         ))}
       </div>
 
-      <div className=" flex flex-col items-center gap-y-6  py-20">
+      <div className=" flex flex-col items-center gap-y-6  py-20 mx-4">
         <h3 className="font-bold">
           ¿NECESITA UN PRODUCTO ESPECÍFICO O ALGÚN EQUIVALENTE?
         </h3>
@@ -39,7 +30,7 @@ async function page() {
           </p>
         </Link>
       </div>
-    </div>
+    </>
   );
 }
 

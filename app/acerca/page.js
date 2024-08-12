@@ -13,7 +13,7 @@ function page() {
           LUBRICANTES ESPECIALES DEL PERU SAC, con RUC: 20523985842. Es uno de
           los mayores distribuidores de Lubricantes Industriales, con
           participación en los sectores de Minería, Transporte, Industria,
-          Construcción, Pesca, Metalmecánica, Textil y otros sector es que
+          Construcción, Pesca, Metalmecánica, Textil y otros sectores que
           participan en la generación de bienes y servicios.
         </p>
       </section>
@@ -21,15 +21,14 @@ function page() {
       <div className="flex  flex-col items-center  lg:flex-row  px-10 py-10 md:px-[15%] md:py-16 gap-y-4 gap-x-4 ">
         <div className=" min-w-[370px] w-[370px] grid grid-cols-2 items-center  gap-4 ">
           <Image src={petro} alt="" className="min-w-32 w-32 h-auto" />
-          <Image src={adinol} alt="" className="min-w-44 w-44 h-auto" />
           <Image src={ngr} alt="" className="min-w-44 w-44 h-auto" />
-          <Image src={verkol} alt="" className="min-w-32 w-32 h-auto" />
+          <Image src="q7.jpg" alt="q7 oils" width={130} height={130} />
         </div>
 
         <div className="w-full1">
           <p className=" break-words ">
             Contamos con una gran variedad y amplitud de productos NRG OIL,
-            ENERGY PETROCANADA (Canada), ADDINOL (Alemania), VERKOL (España).
+            ENERGY PETROCANADA (Canada), Q7 (Perú).
           </p>
 
           <p className="py-5">
@@ -41,7 +40,7 @@ function page() {
       </div>
 
       <div className="w-full py-20 px-10 md:px-[15%] ">
-        <p className=" w-44  text-3xl  font-bold  ">+10 AÑOS EN EL MERCADO</p>
+        <p className=" w-44  text-3xl  font-bold  ">+15 AÑOS EN EL MERCADO</p>
 
         <ul className="py-6">
           <li>

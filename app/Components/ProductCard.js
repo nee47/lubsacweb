@@ -3,13 +3,15 @@ import Image from "next/image";
 
 export default function ProductCard({ title, imgPath, productPath }) {
   return (
-    <div className=" max-w-80  pb-12">
-      <div className="relative">
+    <div className=" max-w-80 max-h-[400px]  pb-12">
+      <div className="relative flex h-full">
         <Image
           src={imgPath}
           //placeholder="blur"
           alt="producto"
-          className="min-w-[250px]"
+          width={300}
+          height={400}
+          className="my-auto"
         />
         <div className="flex absolute inset-0  opacity-0 bg-black md:hover:opacity-80">
           <Link

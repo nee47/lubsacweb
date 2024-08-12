@@ -2,26 +2,31 @@
   {
     "categoria": "hidráulica y plástico",
     "alias": "hidraulica-plastico",
+    "img_src": "/categories/hidraulica.jpg",
     "id": 1
   },
   {
     "categoria": "grasas",
     "alias": "grasas",
+    "img_src": "/categories/grasas2.jpg",
     "id": 2
   },
   {
     "categoria": "aceites de compresores",
     "alias": "compresores",
+    "img_src": "/categories/compresores.jpg",
     "id": 3
   },
   {
     "categoria": "aceites de proceso",
     "alias": "aceite-proceso",
+    "img_src": "/categories/procesos.jpg  ",
     "id": 4
   },
   {
     "categoria": "electroerosión",
     "alias": "electroerosion",
+    "img_src": "/categories/electro.jpg",
     "id": 5
   }
 ]

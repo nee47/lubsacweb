@@ -30,7 +30,11 @@ export default function page() {
 
         <ContactCard title="RUC" desc="20523985842" bg={"bg-yellow-300/30"} />
 
-        <ContactCard title="Teléfono" desc="981366304" bg={"bg-gray-300/30"} />
+        <ContactCard
+          title="Teléfono"
+          desc="+51 981366304 | +51 961484883"
+          bg={"bg-gray-300/30"}
+        />
       </section>
     </div>
   );
