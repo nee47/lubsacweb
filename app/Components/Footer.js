@@ -7,12 +7,13 @@ function Footer() {
     <footer className=" flex justify-center  bg-slate-700 text-white py-10 gap-x-2 md:gap-x-32 ">
       <div className="flex items-center  gap-x-4  max-w-sm rounded-sm">
         <Image
-          className=" h-16 w-auto rounded-full bg-white "
+          className=" h-16 w-auto rounded-full bg-white p-1"
           src={logo}
           alt="Lubricantes especiales del Perú"
         />
         <div className=" text-md max-w-44 font-medium text-white leading-5">
           <span className="font-bold">Lubricantes</span> Especiales del Perú
+          S.A.C.
         </div>
       </div>
 

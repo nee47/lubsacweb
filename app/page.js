@@ -9,9 +9,9 @@ export default function Home() {
 
       <div className="flex flex-col items-center gap-7 m-auto pt-20 pb-20 w-3/4 ">
         <p className="text-3xl font-bold text-yellow-500">
-          Lubricantes especiales del Perú
+          Lubricantes especiales del Perú SAC
         </p>
-        <h2 className=" font-bold">COMBINAMOS EXPERIENCIA E INNOVACION</h2>
+        <h2 className=" font-bold">COMBINAMOS EXPERIENCIA E INNOVACIÓN</h2>
 
         <div className=" ">
           <p className=" ">
@@ -19,15 +19,14 @@ export default function Home() {
             de Minería, transporte, Industria, Construcción, Pesca,
             Metalmecánica, textil y otros.
           </p>
-          <p className=" py-5">
+          <p className=" py-4">
             Contamos con una gran variedad y amplitud de productos NRG oil
-            energy, Vicco oil energy, Petrocanada, Addinol, (Alemania), Verkol
-            (España).
+            energy, Petrocanada, Q7.
           </p>
 
           <p>
-            Marcas que cuentan con un portafolio completo de grasas y aceites
-            depróxima generación: sintéticos, semi-sintéticos, sanitarios y
+            Marcas que cuentan con un portafolio completo de grasas y aceites de
+            próxima generación: sintéticos, semi-sintéticos, sanitarios y
             biodegradables.
           </p>
         </div>

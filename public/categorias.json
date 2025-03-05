@@ -28,5 +28,11 @@
     "alias": "electroerosion",
     "img_src": "/categories/electro.jpg",
     "id": 5
+  },
+  {
+    "categoria": "otros",
+    "alias": "otros",
+    "img_src": "/categories/grasas.jpg",
+    "id": 6
   }
 ]

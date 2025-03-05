@@ -13,15 +13,26 @@ export default function page() {
         <Image className=" h-32 w-auto rounded-sm" src={logo} alt="LUBESAC" />
         <div className=" text-xl max-w-56 font-medium text-black leading-5">
           <span className="font-bold">Lubricantes</span> Especiales del Perú
+          S.A.C.
         </div>
       </div>
       <section className="py-10">
         <ContactCard
-          title="Oficina Principal"
-          desc="Jirón Bulgaria N.º 335-402 Urb. San Elias-Los Olivos"
+          title="Oficina"
+          desc="Calle Bulgaria N.º 335, dpto 402 Urb. San Elias-Los Olivos"
           bg={"bg-yellow-300/30"}
         />
 
+        <ContactCard
+          title="Planta"
+          desc="Calle Alexander Flaming 170, Sta anita"
+          bg={"bg-yellow-300/30"}
+        />
+        <ContactCard
+          title="Almacén"
+          desc="Jr Santa cruz de Pachacutec 270, Los Olivos"
+          bg={"bg-yellow-300/30"}
+        />
         <ContactCard
           title="Email"
           desc="oilxxfm@yahoo.es"

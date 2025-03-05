@@ -23,6 +23,7 @@ function Navigation() {
             />
             <div className=" text-md max-w-44 font-medium text-black leading-5">
               <span className="font-bold">Lubricantes</span> Especiales del Perú
+              S.A.C.
             </div>
           </div>
         </Link>
@@ -45,7 +46,7 @@ function Navigation() {
         <div
           className={`${
             clicked ? "size-full top-0   z-20 bg-white  " : "hidden"
-          } flex flex-col fixed md:flex md:static md:flex-row  items-center justify-center md:size-auto md:m-0 gap-y-10  gap-x-4 px-12`}
+          } flex flex-col fixed pl-6 md:flex md:static md:flex-row  items-center justify-center md:size-auto md:m-0 gap-y-10  gap-x-4 px-12`}
         >
           <Link onClick={toggleNav} href="/">
             <div className=" text-sm  py-2 px-24 md:px-1 md:hover:text-yellow-600 rounded-sm">

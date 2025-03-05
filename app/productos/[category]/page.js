@@ -9,9 +9,6 @@ export async function generateStaticParams() {
 }
 
 export default async function page({ params }) {
-  // console.log("LOS PARAMS SON :");
-  // console.log(params);
-
   const { category } = params;
 
   const products = await getData("data.json");
@@ -19,16 +16,44 @@ export default async function page({ params }) {
     return p.alias == category;
   });
 
+  const logos = {
+    "Petro-Canada": {
+      src: "/petro_canada.webp",
+      w: "50px",
+      h: "55px",
+    },
+    nrg: {
+      src: "/ngr.webp",
+      w: "92px",
+      h: "40px",
+    },
+    Q7: {
+      src: "/q7.jpg",
+      w: "50px",
+      h: "50px",
+    },
+  };
+
   return (
-    <div className="flex flex-wrap justify-center gap-4 my-8 mx-4">
+    <div className="grid md:grid-cols-2 justify-center gap-4 my-8 mx-4">
       {correctProducts.map((p, index) => (
         <div className="flex justify-center " key={index}>
-          <div className=" bg-slate-200 rounded-md max-w-md min-w-[300px] w-full md:w-[500px] p-4 shadow-sm">
-            <h1 className="font-bold text-2xl py-4 underline underline-offset-2 decoration-purple-500 decoration-2 ">
-              {p.nombre}
-            </h1>
-            {p.descripcionDetallada.map((d, index) => (
-              <p key={index} className=" mb-4 text-slate-600">
+          <div className=" rounded-md max-w-md min-w-[300px] w-full md:w-[500px] p-4 shadow-sm shadow-slate-200">
+            <div>
+              <img
+                src={logos[p.brand]?.src}
+                alt="logo"
+                className={`w-[${logos[p.brand]?.w}] h-[${
+                  logos[p.brand]?.h
+                }] object-cover max-h-12`}
+              />
+              <h1 className="font-bold text-2xl mb-4 py-2 h-20 border-b border-b-slate-200 ">
+                {p.name}
+              </h1>
+            </div>
+
+            {p.description?.map((d, index) => (
+              <p key={index} className=" mb-2 text-slate-600 text-sm">
                 {d}
               </p>
             ))}

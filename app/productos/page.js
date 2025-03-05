@@ -1,4 +1,3 @@
-import c1 from "@/public/cilinder.jpg";
 import ProductCard from "@/app/Components/ProductCard";
 import getData from "../lib/getData";
 

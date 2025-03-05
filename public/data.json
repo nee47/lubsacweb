@@ -1,77 +1,98 @@
 [
   {
-    "categoria": "aceites de compresores",
+    "categories": ["aceites de compresores"],
     "alias": "compresores",
-    "nombre": "KOMPRESSOR DX 100-150-220",
-    "descripcion-corta": [
+    "name": "NRG KOMPRESSOR DX 100 150 220",
+    "brand": "nrg",
+    "short-description": [
       "SEMI SINTETICO",
       "TIEMPO DE SERVICIO 8OOO HORAS. SULLAIR",
       "INGERSOLL RAND ATLAS COPCO"
     ],
-    "descripcionDetallada": [
-      "Dentro del medio de la refrigeración y aire acondicionado, la falla más frecuente de los compresores es la Alta Temperatura de Descarga",
-      "Para estimar la temperatura en forma aproximada en los puertos de descarga, se puede proceder en la siguiente manera: Se mide primero la temperatura en grados Celsius (°C) en la tubería de descarga del compresor, entre doce y quince centímetros de la salida del compresor, a esta temperatura se le suman trece grados Celsius (°C), y nos dará la temperatura aproximada en el puerto de descarga.",
-      "Normalmente si esta temperatura en la línea de descarga es de 135 °C, representa fallas. Si es de 120 °C está en un nivel de peligro de falla. Si es de 105 °C o menor, se puede esperar una larga vida del compresor"
+    "description": [
+      "Aceite mineral para compresores de aire tipo pistón.",
+      "Para temperaturas de descarga de 150° C ",
+      "Vida util 2000 horas."
     ]
   },
 
   {
-    "categoria": "aceites de compresores",
+    "categories": ["aceites de compresores"],
     "alias": "compresores",
-    "nombre": "KOMPRESSOR CX 32 46 68",
-    "descripcion-corta": [
+    "name": "NRG KOMPRESSOR CX 32 46 68",
+    "brand": "nrg",
+    "short-description": [
+      "SEMI SINTETICO.",
+      "TIEMPO DE SERVICIO 8OOO HORAS SULLAIR",
+      "INGERSOLL RAND ATLAS COPCO.",
+      "VIDA UTIL 6000 horas."
+    ],
+    "description": [
+      "Aceite sintético para compresores de aire tipo tornillo.",
+      "Para temperaturas de descarga de hasta 105° C",
+      "Vida útil 6000 horas."
+    ]
+  },
+
+  {
+    "categories": ["aceites de compresores"],
+    "alias": "compresores",
+    "name": "Q7 AIR COMPRESSOR 100 150 220",
+    "brand": "Q7",
+    "short-description": [
       "SEMI SINTETICO",
       "TIEMPO DE SERVICIO 8OOO HORAS. SULLAIR",
       "INGERSOLL RAND ATLAS COPCO"
     ],
-    "descripcionDetallada": [
-      "Dentro del medio de la refrigeración y aire acondicionado, la falla más frecuente de los compresores es la Alta Temperatura de Descarga",
-      "Para estimar la temperatura en forma aproximada en los puertos de descarga, se puede proceder en la siguiente manera: Se mide primero la temperatura en grados Celsius (°C) en la tubería de descarga del compresor, entre doce y quince centímetros de la salida del compresor, a esta temperatura se le suman trece grados Celsius (°C), y nos dará la temperatura aproximada en el puerto de descarga.",
-      "Normalmente si esta temperatura en la línea de descarga es de 135 °C, representa fallas. Si es de 120 °C está en un nivel de peligro de falla. Si es de 105 °C o menor, se puede esperar una larga vida del compresor"
+    "description": [
+      "Aceite mineral para compresores de aire tipo pistón.",
+      "Para temperaturas de descarga de 150° C ",
+      "Vida util 2000 horas."
     ]
   },
 
   {
-    "categoria": "grasas",
+    "categories": ["grasas"],
     "alias": "grasas",
-    "nombre": "BRILLANT MP2 LITHIUM",
-    "descripcionDetallada": [
+    "name": "NRG BRILLANT MP2 LITHIUM",
+    "brand": "nrg",
+    "description": [
       "Grasa multipropósito",
-      "Grasa de calcio azul, roja para la protección de equipos que se encuentren a la intemperie y evitar oxidación",
-      "Jabones de calcio que repele el agua de Lluvia mar o presión."
+      "Grasa de litio azul, roja para la protección de equipos que se encuentren a la intemperie y evitar oxidación",
+      "Jabones de litio que repele el agua de Lluvia mar o presión."
     ]
   },
 
   {
-    "categoria": "grasas",
+    "categories": ["grasas"],
     "alias": "grasas",
-    "nombre": "NRG BRILLANT EP 2",
-    "descripcionDetallada": [
+    "name": "NRG BRILLANT EP 2",
+    "brand": "nrg",
+    "description": [
       "Engrase general de planta",
       "Jabones de litium.",
-      "Velocidad 2500 rpm",
-      "Temperat 100° C",
-      "Cargas 2500 newtons",
-      "Color amarillo"
+      "Temperatura operac 100° C"
     ]
   },
 
   {
-    "categoria": "grasas",
+    "categories": ["grasas"],
     "alias": "grasas",
-    "nombre": "THERMATEX",
-    "descripcionDetallada": [
-      "Temperatura operacional 260° C/500°F.",
-      "Espesante de gel de silicio más aceite sintético.",
-      " Utilizado en ruedas de carros de horno de fundición."
+    "name": "PEERLESS LLG",
+    "brand": "Petro-Canada",
+    "description": [
+      "Grasa compleja de sulfonato de calcio",
+      "Temperatura operacional 200° C/392°F.",
+      "NLGI N°2"
     ]
   },
 
   {
-    "categoria": "grasas",
+    "categories": ["grasas"],
     "alias": "grasas",
-    "nombre": "PRESICION XL EMB",
-    "descripcionDetallada": [
+    "name": "PRESICION XL EMB",
+    "brand": "Petro-Canada",
+    "description": [
       "Altas revoluciones.",
       "Por razones de velocidad no saldrá despedida.",
       "factores de velocidad (NDm) > 500 000",
@@ -80,39 +101,66 @@
   },
 
   {
-    "categoria": "grasas",
+    "categories": ["grasas"],
     "alias": "grasas",
-    "nombre": "VULTREX OGL",
-    "descripcionDetallada": [
-      "Donde por la alta carga la grasa es desplazada del piñón.",
+    "name": "VULTREX OGL",
+    "brand": "Petro-Canada",
+    "description": [
+      "Grasa para engranajes abiertos.",
+      "Para altas cargas donde la grasa no sera desplazada del piñón.",
       "Aplicación manual por brocha o sistema neumático, goteo."
     ]
   },
   {
-    "categoria": "grasas",
+    "categories": ["grasas"],
     "alias": "grasas",
-    "nombre": "GRASA ALIMENTICIO",
-    "descripcionDetallada": [
+    "name": "PURITY FG 2",
+    "brand": "Petro-Canada",
+    "description": [
       "Amplia variedad de aplicaciones para Maquinas de procesamiento de alimentos.",
       "Lubricante certificado como H1 por FDA."
     ]
   },
 
   {
-    "categoria": "grasas",
+    "categories": ["grasas"],
     "alias": "grasas",
-    "nombre": "BRILLANT LITHIUM EP 000",
-    "descripcionDetallada": [
+    "name": "BRILLANT LITHIUM EP 000",
+    "brand": "nrg",
+    "description": [
       "Grasa semi liquida excelente bombeabilidad para asegurar la lubricación en los puntos finales.",
       "Aplicables en superficies de desplazamiento de guías y bancadas en tornos CNC y herramientas varias"
     ]
   },
+  {
+    "categories": ["grasas"],
+    "alias": "grasas",
+    "name": "PEERLES OG2",
+    "brand": "Petro-Canada",
+    "description": [
+      "Grasa altamente efectiva en presencia de agua.",
+      "Capaz de absorber niveles moderados de agua sin cambiar de consistencia.",
+      "A base de sulfonato de calcio"
+    ]
+  },
 
   {
-    "categoria": "hidráulica y plástico",
+    "categories": ["grasas"],
+    "alias": "grasas",
+    "name": "PRESSICION XL3 MOLY EP 2",
+    "brand": "Petro-Canada",
+    "description": [
+      "Grasa de complejo de litio con 3% de molibdeno.",
+      "Para altas cargas."
+    ]
+  },
+
+  {
+    "categories": ["hidráulica y plástico"],
     "alias": "hidraulica-plastico",
-    "nombre": "HYDRALUX HVI 22-32-46-68-100-150",
-    "descripcionDetallada": [
+    "name": "NRG HYDRALUX HVI 22 32 46 68 100 150",
+    "brand": "nrg",
+    "description": [
       " Alta pureza de base(99.9%)",
       "Alto índice de viscosidad + 125 IV.",
       "Durabilidad en servicio 25000 horas",
@@ -123,10 +171,11 @@
   },
 
   {
-    "categoria": "hidráulica y plástico",
+    "categories": ["hidráulica y plástico"],
     "alias": "hidraulica-plastico",
-    "nombre": "HYDRALUX AW 68 STD",
-    "descripcionDetallada": [
+    "name": "NRG HYDRALUX AW 68 STD",
+    "brand": "nrg",
+    "description": [
       "Vida útil 8000 hras de servicio",
       "Sistemas bomba motor",
       "Donde los fabricantes sugieran aceites HLP"
@@ -134,10 +183,11 @@
   },
 
   {
-    "categoria": "hidráulica y plástico",
+    "categories": ["hidráulica y plástico"],
     "alias": "hidraulica-plastico",
-    "nombre": "AURHUM AW 68",
-    "descripcionDetallada": [
+    "name": "VICCO AURHUM AW 68",
+    "brand": "nrg",
+    "description": [
       "Vida útil 6000 hras de servicio",
       "Sistemas bomba motor",
       "Donde los fabricantes sugieran aceites HLP"
@@ -145,40 +195,42 @@
   },
 
   {
-    "categoria": "hidráulica y plástico",
+    "categories": ["hidráulica y plástico"],
     "alias": "hidraulica-plastico",
-    "nombre": "GUIDE EP 32 68 120 220",
-    "descripcionDetallada": [
+    "name": "NRG GUIDE EP 32 68 120 220",
+    "brand": "nrg",
+    "description": [
       "Sugeridas por los fabricantes para lubricar las guias de friccion de cierre.",
       "Lubricante que contiene agentes de gran adhesividad y resistencia al desgaste."
     ]
   },
 
   {
-    "categoria": "hidráulica y plástico",
+    "categories": ["hidráulica y plástico"],
     "alias": "hidraulica-plastico",
-    "nombre": "NRG OIL B LITHIUM EP 000",
-    "descripcionDetallada": [
-      "Para la lubricación de guias defriccion de cierre (brazos visagra) del equipo."
+    "name": "NRG B LITHIUM EP 000",
+    "brand": "nrg",
+    "description": [
+      "Para la lubricación de brazos neumáticos defriccion de cierre (brazos visagra)."
     ]
   },
 
   {
-    "categoria": "hidráulica y plástico",
+    "categories": ["hidráulica y plástico"],
     "alias": "hidraulica-plastico",
-    "nombre": "HOLYSTAR H 100 N",
-    "descripcionDetallada": [
-      "Como ya sabemos, no todos los polímeros son iguales. Una diferencia muy importante son las propiedades reológicas, existen polímeros termoplásticos que fluyen con mucha facilidad y por el contrario existen polímeros que se resisten a fluir. Para el caso de los polímeros que fluyen fácilmente",
-      "Para el caso de los polímeros que fluyen fácilmente, la presión de inyección es menor en comparación con los que fluyen menos, esto provoca que la unidad de cierre tenga que aplicar mayor fuerza para mantener el molde cerrado, durante la inyección del polímero. Mayor fuerza de cierre de la máquina, mayor energía por lo tanto, mas gasto de dinero.",
-      "De igual manera este ayudara a una mejor homogenizacion del batch logrando una mejor dispersión de los colorantes,logrando una coloración uniforme en el producto acabado."
+    "name": "NRG HOLYSTAR H 100 N",
+    "brand": "nrg",
+    "description": [
+      "Este producto ayudara a una mejor homogenizacion del batch logrando una mejor dispersión de los colorantes,logrando una coloración uniforme en el producto acabado."
     ]
   },
 
   {
-    "categoria": "aceites de proceso",
+    "categories": ["aceites de proceso"],
     "alias": "aceite-proceso",
-    "nombre": "HOLYSTAR H 100 N",
-    "descripcionDetallada": [
+    "name": "NRG HOLYSTAR H 100 N",
+    "brand": "nrg",
+    "description": [
       "Diseñado como aceite de proceso para la industria química.",
       "Aceite de proceso para la industria del plástico PVC.",
       "Recomendado como aceite plastificante en la industria del caucho.",
@@ -194,21 +246,294 @@
     ]
   },
   {
-    "categoria": "electroerosión",
-    "alias": "electroerosion",
-    "nombre": "FLUIDO TFO II",
-    "descripcionDetallada": [
-      "Fluido naftenico Procedencia USA.",
-      "Acabados mate"
+    "categories": ["aceites de proceso"],
+    "alias": "aceite-proceso",
+    "name": "NRG PROCESS OIL 22",
+    "brand": "nrg",
+    "description": [
+      "Aceite parafínico que pasa por un proceso de hidrocraqueado. Como resultado de este proceso se obtiene bases de alta pureza eliminando compuesto polares que contienen azufre, nitrógeno y oxígeno, y la conversión de hidrocarburos aromáticos en hidrocarburos cíclicos saturados.",
+      ""
     ]
   },
   {
-    "categoria": "electroerosión",
+    "categories": ["electroerosión"],
     "alias": "electroerosion",
-    "nombre": "ELECTRA",
-    "descripcionDetallada": [
-      "Fluido parafínico procedencia España",
-      "Acabados mate"
+    "name": "FLUIDO TFO II",
+    "brand": "Q7",
+    "description": [
+      "Fluido dieléctrico procedente de USA.",
+      "Para acabados del tipo mate",
+      "Vida útil 3 años."
     ]
+  },
+  {
+    "categories": ["electroerosión"],
+    "alias": "electroerosion",
+    "name": "Q7 ELECTROEROSION V",
+    "brand": "Q7",
+    "description": [
+      "Fluido para electroerosión.",
+      "Baja viscosidad.",
+      "Color transparente.",
+      "Bajo porcentaje de azufre",
+      "Vida útil 3 años."
+    ]
+  },
+  {
+    "name": "Q7 HYDRAULIC OIL AW 10 22 32 46 68 100 150",
+    "categories": ["Hydraulic"],
+    "alias": "hidraulica-plastico",
+    "registrations": ["NSF H1", "CFIA n", "n2"],
+    "features": [
+      "Excellent resistance to breakdown from air",
+      "Available in ISO VG 32, 46, 68, 100"
+    ],
+    "description": [
+      "Fluido hidráulico convencional de calidad HLP con aditivos Anti Wear base II.",
+      "Vida útil 8000 horas o 1 año."
+    ],
+    "key_advantages": "Longer fluid life leads to less downtime.",
+    "brand": "Petro-Canada"
+  },
+  {
+    "name": "PURITY FG AW Hydraulic Fluid",
+    "categories": ["Hydraulic"],
+    "alias": "hidraulica-plastico",
+    "registrations": ["NSF H1", "CFIA n"],
+    "features": [
+      "1st EPA Registered Antimicrobial Preservative to protect the lubricant",
+      "Excellent resistance to breakdown from air",
+      "Available in ISO VG 32, 46, 68, 100"
+    ],
+    "description": [
+      "Lubricante avanzado de grado alimenticio.",
+      "Normas:",
+      "H1 registrado por la NSF",
+      "FDA 21 CFR 178.3570 para lubricantes en contacto accidental con los alimentos."
+    ],
+    "key_advantages": "Antimicrobial product protection preserving the lubricant from degradation.",
+    "brand": "Petro-Canada"
+  },
+
+  {
+    "name": "PURITY FG EP Gear Fluid with MICROL",
+    "categories": ["Heavy enclosed gears"],
+    "alias": "others",
+    "registrations": ["NSF H1", "CFIA n"],
+    "features": [
+      "1st EPA Registered Antimicrobial Preservative to protect the lubricant",
+      "Excellent extreme pressure properties",
+      "Protects against damage due to wear, rust and corrosion",
+      "Available in ISO VG 100, 150, 220"
+    ],
+    "key_advantages": "Antimicrobial product protection preserving the lubricant from degradation.",
+    "brand": "Petro-Canada"
+  },
+  {
+    "name": "PURITY FG EP Gear Fluid",
+    "categories": ["Heavy enclosed gears"],
+    "alias": "others",
+    "registrations": ["NSF H1", "CFIA n"],
+    "features": [
+      "Excellent extreme pressure properties",
+      "Protects against damage due to shock loading, long-term wear, build-up of sludge and varnish, rust and corrosion",
+      "Available in ISO VG 100, 150, 220, 320, 460"
+    ],
+    "key_advantages": "Stronger wear protection promotes fewer production upsets and higher productivity.",
+    "brand": "Petro-Canada"
+  },
+  {
+    "name": "PURITY FG Synthetic EP Gear Fluid",
+    "categories": ["Heavy enclosed gears"],
+    "alias": "others",
+    "registrations": ["NSF H1", "CFIA n"],
+    "features": [
+      "Formulated for longer life and reduced downtime, even at high temperatures and in the presence of water or acidic contamination",
+      "Protects gears, bearings and equipment operating under heavy loads",
+      "Ideal for gearboxes, pumps and bearings operating under wide temperature swings",
+      "Reduces seizure, scuffing and spalling",
+      "Available in ISO VG 220"
+    ],
+    "key_advantages": "Ideal for wide temperature application with excellent wear protection.",
+    "brand": "Petro-Canada"
+  },
+  {
+    "name": "PURITY FG Chain Fluid",
+    "categories": ["Chains and conveyors"],
+    "alias": "others",
+    "registrations": ["NSF H1", "CFIA n"],
+    "features": [
+      "Excellent tackiness, resists water wash-off",
+      "Excellent extreme pressure properties - FZG stage 12 pass",
+      "Provides protection against wear, rust and corrosion",
+      "Suitable for brush, drip or centralized applications",
+      "Available in light and heavy grade"
+    ],
+    "key_advantages": "High resistance to water wash-off promotes less consumption and need for reapplication.",
+    "brand": "Petro-Canada"
+  },
+  {
+    "name": "PURITY FG Compressor Fluid",
+    "categories": ["Compressors and Vacuum Pumps"],
+    "alias": "compresores",
+    "registrations": ["NSF H1", "CFIA n"],
+    "features": [
+      "Outstanding oxidation resistance",
+      "4000 hour service in rotary screw and 1000 hour service in vane compressors",
+      "Superb protection against rust and corrosion",
+      "Available in ISO VG 32, 46, 68, 100"
+    ],
+    "key_advantages": "Strong resistance to sludge and varnish formation promotes reduced downtime.",
+    "brand": "Petro-Canada",
+    "description": [
+      "Aceite sanitario para la lubricación de compresores de aire y bombas de vacio",
+      "Normas:",
+      "H1 registrado por la NSF",
+      "FDA 21 CFR 178.3570 para lubricantes en contacto accidental con los alimentos."
+    ]
+  },
+  {
+    "name": "PURITY FG Spray",
+    "categories": ["Multi-functional"],
+    "alias": "others",
+    "registrations": ["NSF H1", "CFIA n"],
+    "features": [
+      "Formulated with tackifiers to stay in place and resist water wash-off",
+      "High load carrying and anti-wear properties",
+      "Convenient method to lubricate chains, way guides, bearings, gears, open gears and other general lubrication"
+    ],
+    "key_advantages": "Convenient spray leads to quick application.",
+    "brand": "Petro-Canada"
+  },
+  {
+    "name": "PURITY FG Trolley Fluid",
+    "categories": ["Hook and trolley system"],
+    "alias": "others",
+    "registrations": ["NSF H1", "CFIA n"],
+    "features": [
+      "Protects better against wear and rust than many leading competitor fluids",
+      "Excellent oxidation stability"
+    ],
+    "key_advantages": "Excellent wear and rust protection promotes longer equipment life.",
+    "brand": "Petro-Canada"
+  },
+  {
+    "name": "PURITY FG Heat Transfer Fluid",
+    "categories": ["Heat transfer system"],
+    "alias": "others",
+    "registrations": ["NSF HT1", "CFIA t1"],
+    "features": [
+      "Suitable for liquid phase application up to 326ºC/620ºF",
+      "Higher thermal and oxidative stability than many leading competitors, which can result in extended fluid life and lower operating costs",
+      "Suitable for food related operations such as the manufacturing of food product packaging materials"
+    ],
+    "key_advantages": "Great thermal and oxidative stability promotes longer life.",
+    "brand": "Petro-Canada"
+  },
+  {
+    "name": "PURITY FG White Oils",
+    "categories": ["Release Agent", "Wipe Down Oil"],
+    "alias": "others",
+    "registrations": ["NSF H1", "NSF 3H", "CFIA n", "CFIA n3"],
+    "features": [
+      "NF/USP quality white mineral oils",
+      "Available in the following grades: 15, 35, 90",
+      "Odourless, tasteless and will not stain"
+    ],
+    "key_advantages": "High quality grade white oil.",
+    "brand": "Petro-Canada"
+  },
+  {
+    "name": "PURITY FG2 Grease with MICROL",
+    "categories": ["Multi-purpose grease for general plant use"],
+    "alias": "others",
+    "registrations": ["NSF H1", "CFIA n (pending)"],
+    "nlgi_grade": "2",
+    "features": [
+      "1st EPA Registered Antimicrobial Preservative to protect the lubricant",
+      "Polyurea Complex",
+      "Very good resistance to water washout and spray loss",
+      "Excellent anti-wear and EP properties",
+      "Very effective protection against rust and corrosion"
+    ],
+    "recommended_operating_temperatures": "-20˚C/-4˚F to 70˚C/158˚F",
+    "key_advantages": "Antimicrobial product protection preserving the lubricant from degradation.",
+    "brand": "Petro-Canada"
+  },
+  {
+    "name": "PURITY FG2 Grease",
+    "categories": ["Multi-purpose grease for general plant use"],
+    "alias": "others",
+    "registrations": ["NSF H1", "CFIA n"],
+    "nlgi_grade": "2",
+    "features": [
+      "Aluminum Complex",
+      "Greater resistance to water washout and spray loss",
+      "Excellent anti-wear and EP properties",
+      "Very effective protection against rust and corrosion"
+    ],
+    "recommended_operating_temperatures": "-20˚C/-4˚F to 160˚C/320˚F",
+    "key_advantages": "Better water washout and spray loss promotes lower consumption.",
+    "brand": "Petro-Canada"
+  },
+  {
+    "name": "PURITY FG00 Grease",
+    "categories": ["Multi-purpose grease for low temperature"],
+    "alias": "others",
+    "registrations": ["NSF H1", "CFIA n"],
+    "nlgi_grade": "00",
+    "features": [
+      "Aluminum Complex",
+      "Excellent anti-wear and EP properties",
+      "Very effective protection against rust and corrosion",
+      "Excellent choice for leaky, enclosed gear cases and auto lube systems"
+    ],
+    "recommended_operating_temperatures": "-35˚C/-31˚F to 120˚C/248˚F",
+    "key_advantages": "Better water washout and spray loss promotes greater long-term equipment protection against rust and corrosion.",
+    "brand": "Petro-Canada"
+  },
+  {
+    "name": "PURITY FG2 Synthetic Grease",
+    "categories": ["Multi-purpose grease for wide temperature"],
+    "alias": "others",
+    "registrations": ["NSF H1", "CFIA n"],
+    "nlgi_grade": "2",
+    "features": [
+      "Calcium Sulfonate Complex",
+      "Higher load carrying capability, excellent protection against wear",
+      "Strong resistance to lubricant breakdown and water washout",
+      "Effective across a wider range of temperature extremes"
+    ],
+    "recommended_operating_temperatures": "-40˚C/-40˚F to 200°C/392°F",
+    "brand": "Petro-Canada"
+  },
+  {
+    "name": "PURITY FG2 Synthetic Grease",
+    "categories": ["Multi-purpose grease for wide temperature"],
+    "alias": "others",
+    "registrations": ["NSF H1", "CFIA n"],
+    "nlgi_grade": "2",
+    "features": [
+      "Calcium Sulfonate Complex",
+      "Higher load carrying capability, excellent protection against wear",
+      "Strong resistance to lubricant breakdown and water washout",
+      "Effective across a wider range of temperature extremes"
+    ],
+    "recommended_operating_temperatures": "-40˚C/-40˚F to  200°C/392°F",
+    "brand": "Petro-Canada"
+  },
+  {
+    "name": "PURITY FG2 Extreme Grease",
+    "categories": ["Multi-purpose grease for wide temperature"],
+    "alias": "others",
+    "registrations": ["NSF H1", "CFIA n"],
+    "nlgi_grade": "2",
+    "features": [
+      "High viscosity, Semi Synthetic, Aluminum Complex",
+      "Greater protection of gears, bearings and equipment when operating from low to medium speed with heavy loads",
+      "Effective protection in applications subjected to high temperature, high pressure, and heavy loads (such as in Pellet Mills)"
+    ],
+    "recommended_operating_temperatures": "-40˚C/-40˚F to  200°C/392°F",
+    "brand": "Petro-Canada"
   }
 ]

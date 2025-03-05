@@ -14,7 +14,7 @@ export default function page() {
         />
       </Link>
 
-      <Link href="/productos/marcas/nrg">
+      <Link href="/productos/marcas/petrocanada">
         <Image
           alt=""
           src="/petro_canada.webp"
@@ -24,7 +24,7 @@ export default function page() {
         />
       </Link>
 
-      <Link href="/productos/marcas/nrg">
+      <Link href="/productos/marcas/q7">
         <Image
           alt=""
           src="/q7.jpg"
