@@ -4,7 +4,7 @@ import Image from "next/image";
 
 function Footer() {
   return (
-    <footer className=" flex justify-center  bg-slate-700 text-white py-10 gap-x-2 md:gap-x-32 ">
+    <footer className="relative flex justify-center  bg-slate-700 text-white py-10 gap-x-2 md:gap-x-32 ">
       <div className="flex items-center  gap-x-4  max-w-sm rounded-sm">
         <Image
           className=" h-16 w-auto rounded-full bg-white p-1"
@@ -74,6 +74,14 @@ function Footer() {
           <p>/lubricantes.especiales.1</p>
         </div>
       </div>
+
+      <a
+        href="https://jamesvilca-porfolio.netlify.app/"
+        target="_blank"
+        className="absolute bottom-4 right-6 text-slate-400 text-xs"
+      >
+        Website powered by James Vilca
+      </a>
     </footer>
   );
 }

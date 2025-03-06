@@ -49,40 +49,40 @@ function Navigation() {
           } flex flex-col fixed pl-6 md:flex md:static md:flex-row  items-center justify-center md:size-auto md:m-0 gap-y-10  gap-x-4 px-12`}
         >
           <Link onClick={toggleNav} href="/">
-            <div className=" text-sm  py-2 px-24 md:px-1 md:hover:text-yellow-600 rounded-sm">
-              INICIO
+            <div className="text-sm py-2 px-24 md:px-1 md:hover:text-yellow-600 rounded-sm">
+              Inicio
             </div>
           </Link>
 
           <div className="relative group">
             <Link onClick={toggleNav} href="/productos">
-              <div className="text-sm  py-2 px-24 md:px-1  md:hover:text-yellow-600 rounded-sm ">
-                PRODUCTOS
+              <div className="text-sm z-20 py-2 px-24 md:px-1  md:hover:text-yellow-600 rounded-sm ">
+                Productos
               </div>
             </Link>
 
             <Link onClick={toggleNav} href="/servicios">
-              <div className="mt-8 md:mt-0  py-2 md:top-8 md:invisible  md:border-t-2 md:border-gray-300 md:absolute z-30  text-sm  px-24  md:px-3  md:hover:text-yellow-600  rounded-sm bg-white group-hover:visible">
-                SERVICIOS
+              <div className="mt-8 md:mt-0 py-2 md:top-0 md:opacity-0 md:border-t-2 md:border-gray-300 md:absolute z-10  text-sm px-24 md:px-3  md:hover:text-yellow-600 transition-all ease-in rounded-sm bg-white  group-hover:top-8 group-hover:opacity-100">
+                Servicios
               </div>
             </Link>
           </div>
 
           <Link onClick={toggleNav} href="/acerca">
             <div className=" text-sm  py-2 px-24 bg-white md:px-1  md:hover:text-yellow-600 rounded-sm hover:opacity-100">
-              NOSOTROS
+              Nosotros
             </div>
           </Link>
 
           <Link onClick={toggleNav} href="/bases">
             <div className=" text-sm  py-2 px-24 bg-white md:px-1  md:hover:text-yellow-600 rounded-sm hover:opacity-100">
-              INFORMACIÓN
+              Información
             </div>
           </Link>
 
           <Link onClick={toggleNav} href="/contacto">
             <div className=" text-sm  py-2 px-24 md:px-1 md:hover:text-yellow-600 rounded-sm">
-              CONTACTO
+              Contacto
             </div>
           </Link>
         </div>
