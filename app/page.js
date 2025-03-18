@@ -1,6 +1,7 @@
 import Hero from "./Components/Hero";
 import Image from "next/image";
 import ProductSection from "./Components/ProductSection";
+import Mision from "./Components/Mision";
 
 export default function Home() {
   return (
@@ -8,10 +9,12 @@ export default function Home() {
       <Hero />
 
       <div className="flex flex-col items-center gap-7 m-auto pt-20 pb-20 w-3/4 ">
-        <p className="text-3xl font-bold text-yellow-500">
+        <p className="text-3xl font-bold text-yellow-200 rounded-sm bg-black px-10 text-center py-4">
           Lubricantes especiales del Perú SAC
         </p>
-        <h2 className=" font-bold">COMBINAMOS EXPERIENCIA E INNOVACIÓN</h2>
+        <h2 className=" font-bold text-yellow-400">
+          COMBINAMOS EXPERIENCIA E INNOVACIÓN
+        </h2>
 
         <div className=" ">
           <p className=" ">
@@ -21,7 +24,7 @@ export default function Home() {
           </p>
           <p className=" py-4">
             Contamos con una gran variedad y amplitud de productos NRG oil
-            energy, Petrocanada, Q7.
+            energy, Petrocanada, Q7 y Anti-Seize.
           </p>
 
           <p>
@@ -32,10 +35,12 @@ export default function Home() {
         </div>
       </div>
 
-      <ProductSection />
+      {/* <ProductSection /> */}
+
+      <Mision></Mision>
 
       <div className=" my-16 mx-auto">
-        <h2 className=" text-center font-bold">MARCAS SOCIAS</h2>
+        <h2 className=" text-center font-bold">Representantes exclusivos</h2>
         <div className=" flex flex-wrap items-center justify-center gap-16 mt-10 ">
           <Image
             width={150}
@@ -52,6 +57,12 @@ export default function Home() {
             alt=""
           />
           <Image width={150} height={80} className="" src="q7.jpg" alt="" />
+          <Image
+            width={150}
+            height={150}
+            src="anti.jpeg"
+            alt="anti-seize marca"
+          ></Image>
           {/* <Image width={150} height={80} className="" src="adinol.png" alt="" /> */}
         </div>
       </div>

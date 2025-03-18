@@ -1,6 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
-import bg from "@/public/bg1.jpg";
 
 export default function Hero() {
   return (

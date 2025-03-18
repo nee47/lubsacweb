@@ -30,7 +30,7 @@ export default async function page() {
   const unique = getUniqueCategories(products);
 
   const nrgProducts = products.filter((p) => {
-    return p.brand == "nrg";
+    return p.brand == "antiseize";
   });
 
   const productsByCategory = getProductsByCategory(nrgProducts);
@@ -41,7 +41,7 @@ export default async function page() {
   return (
     <div className="flex flex-col items-center gap-24">
       <div>
-        <Image src="/ngr.webp" width={200} height={200} alt="nrg"></Image>
+        <Image src="/anti.jpeg" width={200} height={200} alt="nrg"></Image>
       </div>
 
       {unique.map(

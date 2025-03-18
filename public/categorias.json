@@ -1,7 +1,7 @@
 [
   {
-    "categoria": "hidráulica y plástico",
-    "alias": "hidraulica-plastico",
+    "categoria": "Fluidos Hidráulicos",
+    "alias": "fluidos-hidraulicos",
     "img_src": "/categories/hidraulica.jpg",
     "id": 1
   },

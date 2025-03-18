@@ -2,6 +2,12 @@ import Image from "next/image";
 import Link from "next/link";
 
 export default function page() {
+  // ORDEN
+  // Hidraulicas
+  // Transmision
+  // OTHERS
+  // Grasas
+
   return (
     <div className="flex gap-8 py-8 items-center">
       <Link href="/productos/marcas/nrg">
@@ -28,6 +34,16 @@ export default function page() {
         <Image
           alt=""
           src="/q7.jpg"
+          width={145}
+          height={100}
+          className="shadow-md"
+        />
+      </Link>
+
+      <Link href="/productos/marcas/antiseize">
+        <Image
+          alt=""
+          src="/anti.jpeg"
           width={145}
           height={100}
           className="shadow-md"
