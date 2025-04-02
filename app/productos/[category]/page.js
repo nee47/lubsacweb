@@ -1,4 +1,5 @@
 import getData from "@/app/lib/getData";
+export const dynamicParams = false;
 
 export async function generateStaticParams() {
   const categories = await getData("categorias.json");
@@ -13,15 +14,15 @@ export default async function page({ params }) {
 
   const products = await getData("data.json");
   const correctProducts = products.filter((p) => {
-    return p.alias == category;
+    return p.alias === category;
   });
 
   const logos = {
     "Petro-Canada": {
       src: "/petro_canada.webp",
       w: "50px",
-      h: "55px",
     },
+    h: "55px",
     nrg: {
       src: "/ngr.webp",
       w: "92px",

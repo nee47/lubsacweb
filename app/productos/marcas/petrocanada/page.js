@@ -1,7 +1,6 @@
 import getData from "@/app/lib/getData";
 import Image from "next/image";
-import CategoryByBrand from "@/app/Components/CategoryByBrand";
-import ProductCard from "@/app/Components/ProductCard";
+import Link from "next/link";
 
 // ORDEN
 
@@ -9,6 +8,11 @@ import ProductCard from "@/app/Components/ProductCard";
 // Transmisiones
 // OTHERS
 // Grasas
+
+const normalizeTitle = (title) => {
+  const t = title.charAt(0).toUpperCase() + title.slice(1);
+  return t.replaceAll("-", " ");
+};
 
 function getProductsByCategory(products) {
   let res = products.reduce((acc, item) => {
@@ -33,19 +37,28 @@ function getUniqueCategories(products) {
   return Array.from(uniqueAliases); // Convertimos el Set a un array
 }
 
+const getImageCategory = (categories, name) => {
+  return categories.filter((c) => {
+    //console.log(c);
+    return c.alias === name;
+  });
+};
+
 export default async function page() {
   const products = await getData("data.json");
-  const unique = getUniqueCategories(products);
+  const categories = await getData("categorias.json");
 
   const petroProducts = products.filter((p) => {
     return p.brand == "Petro-Canada";
   });
 
-  const productsByCategory = getProductsByCategory(petroProducts);
-  //console.log(productsByCategory[unique[2]]);
+  const unique = getUniqueCategories(petroProducts);
 
-  console.log("unique categories");
-  console.log(unique);
+  console.log(
+    getImageCategory(categories, "engranajes-industriales-sanitarios")
+  );
+  // const productsByCategory = getProductsByCategory(petroProducts);
+  // //console.log(productsByCategory[unique[2]]);
 
   return (
     <div className="flex flex-col items-center gap-24">
@@ -58,37 +71,21 @@ export default async function page() {
         ></Image>
       </div>
 
-      {unique.map(
-        (p) =>
-          productsByCategory[p] && (
-            <CategoryByBrand
-              key={p}
-              category={p}
-              productos={productsByCategory}
-            ></CategoryByBrand>
-          )
-      )}
-
-      {/* <div className="flex flex-wrap justify-center w-[70%] gap-10 my-8 mx-4">
-        {pcProducts.map((p, index) => (
-          <div className="flex w-full md:w-auto justify-center " key={index}>
-            <div className=" rounded-md max-w-md min-w-[300px] w-full md:w-[500px] p-4 shadow-sm shadow-slate-300">
-              <h1 className="font-bold text-xl md:text-2xl py-2 h-20  border-b border-b-slate-200 ">
-                {p.name}
-              </h1>
-              <div className="py-2 text-sm">
-                <span className="font-bold">Categorias: </span>
-                {p.categories.map((d, index) => d)}
-              </div>
-
-              <div className="text-sm">
-                <span className="font-bold">Descripción: </span>
-                {p.description.map((d, index) => d)}
-              </div>
+      <div className="flex flex-wrap gap-4 p-6 justify-center md:w-[70%]">
+        {unique.map((c, index) => (
+          <Link
+            href={`petrocanada/${c}`}
+            key={index}
+            className={`font-bold text-white  text-center`}
+          >
+            <div
+              className={`h-32 w-52 rounded-lg text-lg  flex items-center justify-center  bg-slate-800 hover:bg-red-700 transition-[background]`}
+            >
+              {normalizeTitle(c)}
             </div>
-          </div>
+          </Link>
         ))}
-      </div> */}
+      </div>
     </div>
   );
 }

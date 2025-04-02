@@ -16,7 +16,7 @@ export default function page() {
           src="/ngr.webp"
           width={200}
           height={100}
-          className="shadow-md"
+          className="shadow-md hover:scale-110 transition-transform ease-in fade-in1"
         />
       </Link>
 
@@ -26,7 +26,7 @@ export default function page() {
           src="/petro_canada.webp"
           width={150}
           height={90}
-          className="shadow-md"
+          className="shadow-md hover:scale-110 transition-transform ease-in fade-in2"
         />
       </Link>
 
@@ -36,7 +36,7 @@ export default function page() {
           src="/q7.jpg"
           width={145}
           height={100}
-          className="shadow-md"
+          className="shadow-md hover:scale-110 transition-transform ease-in fade-in3"
         />
       </Link>
 
@@ -46,7 +46,7 @@ export default function page() {
           src="/anti.jpeg"
           width={145}
           height={100}
-          className="shadow-md"
+          className="shadow-md hover:scale-110 transition-transform ease-in fade-in4"
         />
       </Link>
     </div>

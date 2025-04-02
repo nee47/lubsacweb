@@ -7,9 +7,7 @@ export const signIn = async (username, password) => {
     const userFound = await User.findOne({ where: { username } });
     //console.log(userFound);
     if (userFound.dataValues.password != password)
-      throw new Error({
-        error: "SOMETHING WENT WRONG ",
-      });
+      throw new Error("Someting wrong");
 
     const encryptedSessionData = encrypt(
       JSON.stringify({ username: username })

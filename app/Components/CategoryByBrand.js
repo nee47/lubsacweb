@@ -4,16 +4,16 @@ export default async function CategoryByBrand({ category, productos }) {
   const cat = category.charAt(0).toUpperCase() + category.slice(1);
 
   return (
-    <div className="m-4">
-      <h2 className="text-2xl p-4 w-[50%] bg-black  text-white font-semibold">
+    <section className="m-4">
+      <h1 className="text-2xl p-4 w-[50%] bg-black  text-white font-semibold">
         {cat.replaceAll("-", " ")}
-      </h2>
+      </h1>
 
       {/* debajo de esto */}
 
-      {productos[category]?.map((p) => (
-        <div key={p} className="flex flex-col gap-4 mt-10">
-          <div className="flex items-center gap-10 md:w-[800px]  border-b border-slate-400  p-4">
+      {productos?.map((p, index) => (
+        <article key={index} className="flex flex-col gap-4 mt-10">
+          <div className="flex flex-col md:flex-row items-center gap-10 md:w-[800px]  border-b border-slate-400  p-4">
             <h3 className="font-bold w-[270px] flex-shrink-0">{p.name}</h3>
 
             <div>
@@ -23,10 +23,17 @@ export default async function CategoryByBrand({ category, productos }) {
                 </div>
               ))}
             </div>
-            {p.img && <Image src={p.img} width={200} height={50}></Image>}
+            {p.img && (
+              <Image
+                src={p.img}
+                width={200}
+                height={250}
+                alt="product image"
+              ></Image>
+            )}
           </div>
-        </div>
+        </article>
       ))}
-    </div>
+    </section>
   );
 }

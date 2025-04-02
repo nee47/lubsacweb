@@ -55,18 +55,24 @@ function Navigation() {
           </Link>
 
           <div className="relative group">
-            <Link onClick={toggleNav} href="/productos">
+            <Link onClick={toggleNav} href="/productos/marcas">
               <div className="text-sm z-20 py-2 px-24 md:px-1  md:hover:text-yellow-600 rounded-sm ">
                 Productos
               </div>
             </Link>
 
-            <Link onClick={toggleNav} href="/servicios">
-              <div className="mt-8 md:mt-0 py-2 md:top-0 md:opacity-0 md:border-t-2 md:border-gray-300 md:absolute z-10  text-sm px-24 md:px-3  md:hover:text-yellow-600 transition-all ease-in rounded-sm bg-white  group-hover:top-8 group-hover:opacity-100">
-                Servicios
-              </div>
-            </Link>
+            <div className="flex flex-col gap-2 mt-8 md:w-44 md:mt-4 py-f2 md:top-0 md:opacity-0 md:border-t-2 md:border-gray-300 md:absolute z-10  text-sm px-24 md:px-3   transition-all ease-in rounded-sm bg-white group-hover:top-8 group-hover:opacity-100">
+              <Link onClick={toggleNav} href="/productos">
+                <div className="md:hover:text-yellow-600">
+                  Productos por industria
+                </div>
+              </Link>
+            </div>
           </div>
+
+          <Link onClick={toggleNav} href="/servicios">
+            <div className="md:hover:text-yellow-600">Servicios</div>
+          </Link>
 
           <Link onClick={toggleNav} href="/acerca">
             <div className=" text-sm  py-2 px-24 bg-white md:px-1  md:hover:text-yellow-600 rounded-sm hover:opacity-100">

@@ -1,6 +1,18 @@
 import getData from "@/app/lib/getData";
 import Image from "next/image";
-import CategoryByBrand from "@/app/Components/CategoryByBrand";
+import Link from "next/link";
+
+// ORDEN
+
+// Hidraulicas
+// Transmisiones
+// OTHERS
+// Grasas
+
+const normalizeTitle = (title) => {
+  const t = title.charAt(0).toUpperCase() + title.slice(1);
+  return t.replaceAll("-", " ");
+};
 
 function getProductsByCategory(products) {
   let res = products.reduce((acc, item) => {
@@ -17,7 +29,7 @@ function getUniqueCategories(products) {
   const uniqueAliases = new Set(); // Usamos un Set para evitar duplicados
 
   products.forEach((product) => {
-    if (product.alias) {
+    if (product?.alias) {
       uniqueAliases.add(product.alias);
     }
   });
@@ -27,16 +39,15 @@ function getUniqueCategories(products) {
 
 export default async function page() {
   const products = await getData("data.json");
-  const unique = getUniqueCategories(products);
 
-  const nrgProducts = products.filter((p) => {
+  const petroProducts = products.filter((p) => {
     return p.brand == "antiseize";
   });
 
-  const productsByCategory = getProductsByCategory(nrgProducts);
+  const unique = getUniqueCategories(petroProducts);
 
-  console.log("unique categories");
-  console.log(unique);
+  // const productsByCategory = getProductsByCategory(petroProducts);
+  // //console.log(productsByCategory[unique[2]]);
 
   return (
     <div className="flex flex-col items-center gap-24">
@@ -44,16 +55,19 @@ export default async function page() {
         <Image src="/anti.jpeg" width={200} height={200} alt="nrg"></Image>
       </div>
 
-      {unique.map(
-        (p) =>
-          productsByCategory[p] && (
-            <CategoryByBrand
-              key={p}
-              category={p}
-              productos={productsByCategory}
-            ></CategoryByBrand>
-          )
-      )}
+      <div className="flex flex-wrap gap-4 p-6 justify-center md:w-[70%]">
+        {unique.map((c, index) => (
+          <Link
+            href={`antiseize/${c}`}
+            key={index}
+            className={`font-bold text-white  text-center`}
+          >
+            <div className="h-32 w-52 rounded-lg text-lg  flex items-center justify-center bg-slate-900 hover:bg-red-500 transition-[background]">
+              {normalizeTitle(c)}
+            </div>
+          </Link>
+        ))}
+      </div>
     </div>
   );
 }

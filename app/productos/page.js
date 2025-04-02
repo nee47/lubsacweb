@@ -1,34 +1,72 @@
-import ProductCard from "@/app/Components/ProductCard";
-import getData from "../lib/getData";
+import ByCategories from "../Components/ByCategories";
 
-import Link from "next/link";
+import Image from "next/image";
 
 async function page() {
-  const products = await getData("categorias.json");
+  const brochures = [
+    { img: "brochure1.jpg", pdf: "brochure_food_oil.pdf" },
+    {
+      img: "brochure2.jpg",
+      pdf: "CATALOGO_METALMECANICA.pdf",
+    },
+    {
+      img: "SOLUBLES.jpg",
+      pdf: "SOLUBLES.pdf",
+    },
+    {
+      img: "electro.jpg",
+      pdf: "CATALOGO_FLUIDOS_DE_ELECTROEROSION.pdf",
+    },
+    {
+      img: "hidraulica.jpg",
+      pdf: "hidraulica.pdf",
+    },
+    {
+      img: "compresores.jpg",
+      pdf: "compresores_de_aire.pdf",
+    },
+    {
+      img: "proceso.jpg",
+      pdf: "aceite_proceso.pdf",
+    },
+    {
+      img: "grasas.jpg",
+      pdf: "grasas.pdf",
+    },
+  ];
 
   return (
     <>
-      <div className=" my-14 grid md:grid-cols-3 gap-x-4 md:max-w-2xl">
-        {products.map((p, index) => (
-          <ProductCard
-            key={index}
-            title={p.categoria}
-            imgPath={p.img_src || c1}
-            productPath={"productos/" + p.alias}
-          />
-        ))}
-      </div>
+      <ByCategories></ByCategories>
+      <article className="w-full">
+        <h1 className="text-4xl font-bold py-4 text-center"> Brochures</h1>
 
-      <div className=" flex flex-col items-center gap-y-6  py-20 mx-4">
-        <h3 className="font-bold">
-          ¿NECESITA UN PRODUCTO ESPECÍFICO O ALGÚN EQUIVALENTE?
-        </h3>
-        <Link href="/contacto">
-          <p className=" text-sm w-32 px-4 py-2 bg-yellow-300  hover:bg-yellow-400 ">
-            Contáctenos
-          </p>
-        </Link>
-      </div>
+        <ul className="flex flex-wrap justify-center m-auto gap-6 max-w-[1000px]">
+          {brochures.map((item, index) => {
+            return (
+              <li key={index} className="">
+                <a target="_blank" href={item?.pdf}>
+                  <Image
+                    alt="brochure image"
+                    src={item?.img}
+                    width={300}
+                    height={500}
+                    className="rounded-md"
+                  ></Image>
+                </a>
+              </li>
+            );
+          })}
+        </ul>
+
+        {/* <div className="w-[50%] h-[500px] m-auto">
+          <iframe
+            src="brochure_food_oil.pdf"
+            className="w-full h-full"
+            title="PDF Viewer"
+          />
+        </div> */}
+      </article>
     </>
   );
 }

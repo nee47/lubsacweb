@@ -1,4 +1,5 @@
 import TabBar from "../Components/TabBar";
+import Link from "next/link";
 
 export default function categoryLayout({ children }) {
   return (
@@ -12,15 +13,20 @@ export default function categoryLayout({ children }) {
         </p>
       </section>
 
-      {/* <div>
-        <div>
-          BEBA
-        </div>
-      </div> */}
-
       <TabBar></TabBar>
 
       {children}
+
+      <div className=" flex flex-col items-center gap-y-6  py-20 mx-4">
+        <h3 className="font-bold">
+          ¿NECESITA UN PRODUCTO ESPECÍFICO O ALGÚN EQUIVALENTE?
+        </h3>
+        <Link href="/contacto">
+          <p className=" text-sm w-32 px-4 py-2 bg-yellow-300  hover:bg-yellow-400 ">
+            Contáctenos
+          </p>
+        </Link>
+      </div>
     </div>
   );
 }

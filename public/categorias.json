@@ -14,7 +14,7 @@
   {
     "categoria": "aceites de compresores",
     "alias": "compresores",
-    "img_src": "/categories/compresores.jpg",
+    "img_src": "/categories/compresora.jpg",
     "id": 3
   },
   {
@@ -29,10 +29,48 @@
     "img_src": "/categories/electro.jpg",
     "id": 5
   },
+
   {
-    "categoria": "otros",
-    "alias": "otros",
-    "img_src": "/categories/grasas.jpg",
-    "id": 6
+    "categoria": "electroerosión",
+    "alias": "guias-y-bancadas",
+    "img_src": "/categories/guias_lineales.jpg",
+    "id": 5
+  },
+
+  {
+    "categoria": "electroerosión",
+    "alias": "engranajes-industriales",
+    "img_src": "/categories/engranajes.jpeg",
+    "id": 5
+  },
+  {
+    "categoria": "electroerosión",
+    "alias": "protector-de-metales",
+    "img_src": "/categories/protector_metaless.jpg",
+    "id": 5
+  },
+  {
+    "categoria": "electroerosión",
+    "alias": "Fluido-para-transferencia-de-calor",
+    "img_src": "/categories/transferencia_calor.jpeg",
+    "id": 5
+  },
+  {
+    "categoria": "electroerosión",
+    "alias": "solubles",
+    "img_src": "/categories/aceite_solubles.jpg",
+    "id": 5
+  },
+  {
+    "categoria": "electroerosión",
+    "alias": "perforacion-neumatica",
+    "img_src": "/categories/perforacion_neumatica.webp",
+    "id": 5
+  },
+  {
+    "categoria": "electroerosión",
+    "alias": "turbinas",
+    "img_src": "/categories/turbina_hidraulica.jpg",
+    "id": 5
   }
 ]
