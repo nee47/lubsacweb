@@ -7,27 +7,62 @@
   background-attachment: fixed;
 }
 
+@keyframes f2 {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 100;
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeO {
+  from {
+    opacity: 100;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
 }
 
+.fadeOut {
+  animation: fadeO 1s ease-in;
+}
+
+.hero-animation {
+  animation: fadeIn 1.2s ease-in;
+}
+
 .fade-in1 {
-  animation: fadeIn 1.5s ease-out;
+  animation: f2 0.5s ease-out;
 }
 
 .fade-in2 {
-  animation: fadeIn 3s ease-out;
+  animation: f2 1s ease-out;
 }
 
 .fade-in3 {
-  animation: fadeIn 4.5s ease-out;
+  animation: f2 1.5s ease-out;
 }
 
 .fade-in4 {
-  animation: fadeIn 6s ease-out;
+  animation: f2 2s ease-out;
 }

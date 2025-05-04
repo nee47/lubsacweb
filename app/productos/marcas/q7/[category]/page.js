@@ -7,7 +7,7 @@ export default async function page({ params }) {
 
   const products = await getData("data.json");
   const correctProducts = products.filter((p) => {
-    return p.alias == category && p.brand == "Q7";
+    return p.alias == category && p.brand == "q7";
   });
 
   if (correctProducts.length == 0) redirect("/404");

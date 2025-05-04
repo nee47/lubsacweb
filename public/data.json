@@ -14,7 +14,7 @@
       "Para temperaturas de descarga de 150° C ",
       "Vida util 2000 horas."
     ],
-    "img": "/nrg_ci.png"
+    "img": "/nrg_ci.jpg"
   },
 
   {
@@ -33,14 +33,14 @@
       "Para temperaturas de descarga de hasta 105° C",
       "Vida útil 6000 horas."
     ],
-    "img": "/nrg_ci.png"
+    "img": "/nrg_ci.jpg"
   },
 
   {
     "categories": ["aceites de compresores"],
     "alias": "compresores",
     "name": "Q7 AIR COMPRESSOR 100 150 220",
-    "brand": "Q7",
+    "brand": "q7",
     "short-description": [
       "SEMI SINTETICO",
       "TIEMPO DE SERVICIO 8OOO HORAS. SULLAIR",
@@ -63,7 +63,7 @@
       "Grasa de litio azul, roja para la protección de equipos que se encuentren a la intemperie y evitar oxidación",
       "Jabones de litio que repele el agua de Lluvia mar o presión."
     ],
-    "img": "/nrg_ci.png"
+    "img": "/nrg_ci.jpg"
   },
 
   {
@@ -77,14 +77,14 @@
       "Jabones de litium.",
       "Temperatura operac 100° C"
     ],
-    "img": "/nrg_ci.png"
+    "img": "/nrg_ci.jpg"
   },
 
   {
     "categories": ["grasas"],
     "alias": "grasas",
     "name": "PEERLESS LLG",
-    "brand": "Petro-Canada",
+    "brand": "petrocanada",
     "description": [
       "Grasa compleja de sulfonato de calcio",
       "Temperatura operacional 200° C/392°F.",
@@ -97,7 +97,7 @@
     "categories": ["grasas"],
     "alias": "grasas",
     "name": "PRECISION XL EMB",
-    "brand": "Petro-Canada",
+    "brand": "petrocanada",
     "description": [
       "Altas revoluciones.",
       "Por razones de velocidad no saldrá despedida.",
@@ -111,7 +111,7 @@
     "categories": ["grasas"],
     "alias": "grasas",
     "name": "VULTREX OGL",
-    "brand": "Petro-Canada",
+    "brand": "petrocanada",
     "description": [
       "Grasa para engranajes abiertos.",
       "Para altas cargas donde la grasa no sera desplazada del piñón.",
@@ -129,13 +129,13 @@
       "Grasa semi liquida excelente bombeabilidad para asegurar la lubricación en los puntos finales.",
       "Aplicables en superficies de desplazamiento de guías y bancadas en tornos CNC y herramientas varias"
     ],
-    "img": "/nrg_ci.png"
+    "img": "/nrg_ci.jpg"
   },
   {
     "categories": ["grasas"],
     "alias": "grasas",
     "name": "PEERLESS OG2",
-    "brand": "Petro-Canada",
+    "brand": "petrocanada",
     "description": [
       "Grasa altamente efectiva en presencia de agua.",
       "Capaz de absorber niveles moderados de agua sin cambiar de consistencia.",
@@ -148,7 +148,7 @@
     "categories": ["grasas"],
     "alias": "grasas",
     "name": "PRECISION XL3 MOLY EP 2",
-    "brand": "Petro-Canada",
+    "brand": "petrocanada",
     "description": [
       "Grasa de complejo de litio con 3% de molibdeno.",
       "Para altas cargas."
@@ -168,7 +168,7 @@
       "Vida útil 25000 horas.",
       "Utilizado en sistemas de servobomba."
     ],
-    "img": "/nrg_ci.png"
+    "img": "/nrg_ci.jpg"
   },
 
   {
@@ -181,7 +181,7 @@
       "Sistemas bomba motor.",
       "Donde los fabricantes sugieran aceites HLP."
     ],
-    "img": "/nrg_ci.png"
+    "img": "/nrg_ci.jpg"
   },
 
   {
@@ -194,7 +194,7 @@
       "Sistemas bomba motor.",
       "Donde los fabricantes sugieran aceites HLP."
     ],
-    "img": "/nrg_ci.png"
+    "img": "/nrg_ci.jpg"
   },
 
   {
@@ -206,7 +206,7 @@
       "Para lubricación de guías de fricción de cierre en inyectoras.",
       "Alta adhesividad y coeficiente de fricción bajo."
     ],
-    "img": "/nrg_ci.png"
+    "img": "/nrg_ci.jpg"
   },
 
   {
@@ -228,7 +228,7 @@
       "Sistemas de tratamiento térmico.",
       "Aceite textil para maquinas rectas."
     ],
-    "img": "/nrg_ci.png"
+    "img": "/nrg_ci.jpg"
   },
   {
     "categories": ["aceites de proceso"],
@@ -239,13 +239,13 @@
       "Aceite parafínico que pasa por un proceso de hidrocraqueado. Como resultado de este proceso se obtiene bases de alta pureza eliminando compuesto polares que contienen azufre, nitrógeno y oxígeno, y la conversión de hidrocarburos aromáticos en hidrocarburos cíclicos saturados.",
       ""
     ],
-    "img": "/nrg_ci.png"
+    "img": "/nrg_ci.jpg"
   },
   {
     "categories": ["electroerosión"],
     "alias": "electroerosion",
     "name": "FLUIDO TFO II",
-    "brand": "Q7",
+    "brand": "q7",
     "description": [
       "Fluido dieléctrico procedente de USA.",
       "Para acabados del tipo mate",
@@ -256,7 +256,7 @@
     "categories": ["electroerosión"],
     "alias": "electroerosion",
     "name": "Q7 ELECTROEROSION V",
-    "brand": "Q7",
+    "brand": "q7",
     "description": [
       "Fluido para electroerosión.",
       "Baja viscosidad.",
@@ -270,7 +270,7 @@
     "categories": ["electroerosión"],
     "alias": "aceites-sanitarios-blancos",
     "name": "PURITY FG WO",
-    "brand": "Petro-Canada",
+    "brand": "petrocanada",
     "description": [
       "Para industria de procesamiento de alimentos, farmacéutica y agricola.",
       "Tambien utilizado en el desmoldeo de equipos y control de polvo"
@@ -282,7 +282,7 @@
     "categories": ["electroerosión"],
     "alias": "aceites-sanitarios-blancos",
     "name": "PURITY FG Spray",
-    "brand": "Petro-Canada",
+    "brand": "petrocanada",
     "description": [
       "Para cadenas, carriles, guías de deslizamientos, pivotes, cables, visagras y eslabones de engranajes.",
       "Agente de adhesividad especial, reduce el goteo."
@@ -307,7 +307,7 @@
       "FDA 21 CFR 178.3570 para lubricantes en contacto accidental con los alimentos."
     ],
     "key_advantages": "Antimicrobial product protection preserving the lubricant from degradation.",
-    "brand": "Petro-Canada",
+    "brand": "petrocanada",
     "img": "/petropurityfgaw.png"
   },
 
@@ -323,7 +323,7 @@
       "Available in ISO VG 100, 150, 220"
     ],
     "key_advantages": "Antimicrobial product protection preserving the lubricant from degradation.",
-    "brand": "Petro-Canada",
+    "brand": "petrocanada",
     "description": [
       "Aceite para engranjes cerrados tornillo sin fin, helicoidales, cónicoss y dientes rectos."
     ],
@@ -341,7 +341,7 @@
       "Available in ISO VG 100, 150, 220"
     ],
     "key_advantages": "Antimicrobial product protection preserving the lubricant from degradation.",
-    "brand": "Petro-Canada",
+    "brand": "petrocanada",
     "description": ["Aceite sintético para engranjes.", "ISO 220"],
     "img": "/petropurityfgepgear.jpeg"
   },
@@ -349,7 +349,7 @@
   {
     "name": "PURITY FG Synthetic Fluid",
     "categories": ["Heavy enclosed gears"],
-    "alias": "Fluido-para-compresores-de-aire-sanitarios",
+    "alias": "fluido-para-compresores-de-aire-sanitarios",
     "registrations": ["NSF H1", "CFIA n"],
     "features": [
       "Formulated for longer life and reduced downtime, even at high temperatures and in the presence of water or acidic contamination",
@@ -359,7 +359,7 @@
       "Available in ISO VG 220"
     ],
     "key_advantages": "Ideal for wide temperature application with excellent wear protection.",
-    "brand": "Petro-Canada",
+    "brand": "petrocanada",
     "description": [
       "Aceite sanitario sintético utilizado en compresores de aire y bombas de vacio.",
       "Normas:",
@@ -371,7 +371,7 @@
   {
     "name": "PURITY FG Chain Fluid",
     "categories": ["Chains and conveyors"],
-    "alias": "Fluido-para-cadenas-sanitario",
+    "alias": "fluido-para-cadenas-sanitario",
     "registrations": ["NSF H1", "CFIA n"],
     "features": [
       "Excellent tackiness, resists water wash-off",
@@ -381,14 +381,14 @@
       "Available in light and heavy grade"
     ],
     "key_advantages": "High resistance to water wash-off promotes less consumption and need for reapplication.",
-    "brand": "Petro-Canada",
+    "brand": "petrocanada",
     "description": ["Alta adhesividad.", "Temperatura de operación 200° C."],
     "img": "/petrochain.jpg"
   },
   {
     "name": "PURITY FG Compressor Fluid",
     "categories": ["Compressors and Vacuum Pumps"],
-    "alias": "Fluido-para-compresores-de-aire-sanitarios",
+    "alias": "fluido-para-compresores-de-aire-sanitarios",
     "registrations": ["NSF H1", "CFIA n"],
     "features": [
       "Outstanding oxidation resistance",
@@ -397,7 +397,7 @@
       "Available in ISO VG 32, 46, 68, 100"
     ],
     "key_advantages": "Strong resistance to sludge and varnish formation promotes reduced downtime.",
-    "brand": "Petro-Canada",
+    "brand": "petrocanada",
     "description": [
       "Aceite sanitario para la lubricación de compresores de aire y bombas de vacio",
       "Normas:",
@@ -410,7 +410,7 @@
   {
     "name": "PURITY FG Heat Transfer Fluid",
     "categories": ["Heat transfer system"],
-    "alias": "Fluido-para-transferencia-de-calor-sanitario",
+    "alias": "fluido-para-transferencia-de-calor-sanitario",
     "registrations": ["NSF HT1", "CFIA t1"],
     "features": [
       "Suitable for liquid phase application up to 326ºC/620ºF",
@@ -418,7 +418,7 @@
       "Suitable for food related operations such as the manufacturing of food product packaging materials"
     ],
     "key_advantages": "Great thermal and oxidative stability promotes longer life.",
-    "brand": "Petro-Canada",
+    "brand": "petrocanada",
     "description": [
       "Con capacidad de transferencia de calor de 320° C.",
       "Para sistemas cerrrados o abiertos.",
@@ -441,7 +441,7 @@
     ],
     "recommended_operating_temperatures": "-20˚C/-4˚F to 160˚C/320˚F",
     "key_advantages": "Better water washout and spray loss promotes lower consumption.",
-    "brand": "Petro-Canada",
+    "brand": "petrocanada",
     "description": [
       "Grasa de grado alimenticio.",
       "Con aditivos ep.",
@@ -463,7 +463,7 @@
       "Effective across a wider range of temperature extremes"
     ],
     "recommended_operating_temperatures": "-40˚C/-40˚F to 200°C/392°F",
-    "brand": "Petro-Canada",
+    "brand": "petrocanada",
     "description": [
       "Grasa sintética de grado alimenticio.",
       "Para cargas más pesadas.",
@@ -485,7 +485,7 @@
       "Effective across a wider range of temperature extremes"
     ],
     "recommended_operating_temperatures": "-40˚C/-40˚F to 200°C/392°F",
-    "brand": "Petro-Canada",
+    "brand": "petrocanada",
     "description": [
       "Refrigera, lubrica y facilita el sellado en las bombas de vacio de pistones y paletas rotativas.",
       "Resistencia a la degradación a altas temperaturas."
@@ -499,7 +499,7 @@
     "alias": "engranajes-industriales",
     "brand": "nrg",
     "description": ["Aceite de engranjes industriales.", "Con aditivos EP."],
-    "img": "/nrg_ci.png"
+    "img": "/nrg_ci.jpg"
   },
 
   {
@@ -525,17 +525,17 @@
     "description": [
       "Aceites de protección de metales con aditivos que previenen la oxidación y corrosión. "
     ],
-    "img": "/nrg_ci.png"
+    "img": "/nrg_ci.jpg"
   },
   {
     "name": "NRG THERMOL HT 22 32 46 68 100",
     "categories": ["Multi-purpose grease for wide temperature"],
-    "alias": "Fluido-para-transferencia-de-calor",
+    "alias": "fluido-para-transferencia-de-calor",
     "brand": "nrg",
     "description": [
       "Capacidad de transferir hasta 320° C en sistemas cerrados."
     ],
-    "img": "/nrg_ci.png"
+    "img": "/nrg_ci.jpg"
   },
 
   {
@@ -548,7 +548,7 @@
       "Durabilidad: 6 meses a un año.",
       "Para mecanizado de aluminios, bronces, cobre y aceros de alta aleación"
     ],
-    "img": "/nrg_ci.png"
+    "img": "/nrg_ci.jpg"
   },
   {
     "name": "NRG HAMMER EP 100 150",
@@ -560,7 +560,7 @@
       "Para martillos perforadores de roca.",
       "Alta adhesividad."
     ],
-    "img": "/nrg_ci.png"
+    "img": "/nrg_ci.jpg"
   },
   {
     "name": "NRG KHALLPA 68 100 150",
@@ -572,14 +572,14 @@
       "Husillos de alta velocidad.",
       "Transmisiones hidráulicas con superficies de acero, bronce y plata."
     ],
-    "img": "/nrg_ci.png"
+    "img": "/nrg_ci.jpg"
   },
 
   {
     "name": "Q7 HYDRAULIC OIL AW 10 22 32 46 68 100 150",
     "categories": ["Multi-purpose grease for wide temperature"],
     "alias": "fluidos-hidraulicos",
-    "brand": "Q7",
+    "brand": "q7",
     "description": ["Aceite mineral base II.", "Vida útil 8000 horas.", "HLP"]
   },
 
@@ -587,7 +587,7 @@
     "name": "Q7 TRANSMISSION EP 68 100 150 220 320 460",
     "categories": ["Multi-purpose grease for wide temperature"],
     "alias": "engranajes-industriales",
-    "brand": "Q7",
+    "brand": "q7",
     "description": [
       "Aceite premium para la lubricación de engranajes cerrados.",
       "Resistencia a la formación de espuma.",
@@ -598,7 +598,7 @@
     "name": "Q7 TRANSYN 68 100 150 220 320 460",
     "categories": ["Multi-purpose grease for wide temperature"],
     "alias": "engranajes-industriales",
-    "brand": "Q7",
+    "brand": "q7",
     "description": [
       "Aceite sintético para transmisiones.",
       "Temperatura de operación 80° C."
@@ -609,7 +609,7 @@
     "name": "Q7 GUIAS EP 32 46 68 120 220",
     "categories": ["Multi-purpose grease for wide temperature"],
     "alias": "guias-y-bancadas",
-    "brand": "Q7",
+    "brand": "q7",
     "description": [
       "Gran adhesividad 'aceite de no salpicado'",
       "ISO 32 para guías lineales."
@@ -618,7 +618,7 @@
   {
     "name": "COP GRAF",
     "categories": ["Multi-purpose grease for wide temperature"],
-    "alias": "Productos",
+    "alias": "antiseize",
     "brand": "antiseize",
     "img": "/cop.jpeg",
     "description": [
@@ -632,7 +632,7 @@
   {
     "name": "Antiseize Special",
     "categories": ["Multi-purpose grease for wide temperature"],
-    "alias": "Productos",
+    "alias": "antiseize",
     "brand": "antiseize",
     "description": [
       "Antiadherente a base de aluminio, cobre y grafito.",
@@ -644,7 +644,7 @@
   {
     "name": "Nickel Graf",
     "categories": ["Multi-purpose grease for wide temperature"],
-    "alias": "Productos",
+    "alias": "antiseize",
     "brand": "antiseize",
     "description": [
       "Antiadherente a base de niquel y grafito.",
@@ -656,7 +656,7 @@
   {
     "name": "MOLY LIT",
     "categories": ["Multi-purpose grease for wide temperature"],
-    "alias": "Productos",
+    "alias": "moly-spray",
     "brand": "antiseize",
     "description": [
       "Ofrece alta concentración de bisulfuro de molibdeno, grafito y otros antiadherentes (1315° C).",
@@ -668,7 +668,7 @@
   {
     "name": "PURE WHITE (Grado alimenticio)",
     "categories": ["Multi-purpose grease for wide temperature"],
-    "alias": "Productos",
+    "alias": "antiseize",
     "brand": "antiseize",
     "description": [
       "Antiadherente con PTFE.",
@@ -681,7 +681,7 @@
   {
     "name": "AST PENETRANT II",
     "categories": ["Multi-purpose grease for wide temperature"],
-    "alias": "Productos",
+    "alias": "fluidos-penetrantes",
     "brand": "antiseize",
     "description": [
       "Penetrante industrial para servicio pesado.",
@@ -692,7 +692,7 @@
   {
     "name": "CHAIN&CABLE LUBRICANT AND PROTECTANT",
     "categories": ["Multi-purpose grease for wide temperature"],
-    "alias": "Productos",
+    "alias": "chain-and-cable",
     "brand": "antiseize",
     "description": [
       "Lubricante de cadenas y cables para serivicio pesado.",
@@ -705,7 +705,7 @@
   {
     "name": "OPEN GEAR LUBE",
     "categories": ["Multi-purpose grease for wide temperature"],
-    "alias": "Productos",
+    "alias": "open-gear-lube",
     "brand": "antiseize",
     "description": [
       "Lubricante para engranajes abiertos.",
@@ -718,7 +718,7 @@
   {
     "name": "MOLY SPRAY",
     "categories": ["Multi-purpose grease for wide temperature"],
-    "alias": "Productos",
+    "alias": "moly-spray",
     "brand": "antiseize",
     "description": [
       "Lubricante de película seca.",
@@ -731,7 +731,7 @@
   {
     "name": "AST LUBRICANTE DE SILICONA",
     "categories": ["Multi-purpose grease for wide temperature"],
-    "alias": "Productos",
+    "alias": "siliconas",
     "brand": "antiseize",
     "description": [
       "Lubricante seco y agente de desmoldado.",
@@ -745,7 +745,7 @@
   {
     "name": "AST LUBRICANTE DE SILICONA (Grado alimenticio)",
     "categories": ["Multi-purpose grease for wide temperature"],
-    "alias": "Productos",
+    "alias": "siliconas",
     "brand": "antiseize",
     "description": [
       "Clasificación de la USDA H-1.",
@@ -759,7 +759,7 @@
   {
     "name": "FOOD MACHINARIES LUBE (Grado alimenticio)",
     "categories": ["Multi-purpose grease for wide temperature"],
-    "alias": "Productos",
+    "alias": "food-machinery-lube",
     "brand": "antiseize",
     "description": [
       "Lubricante para maquinas de alimento (Grado alinenticio).",
@@ -772,7 +772,7 @@
   {
     "name": "METAL PARTS PROTECTOR",
     "categories": ["Multi-purpose grease for wide temperature"],
-    "alias": "Productos",
+    "alias": "metal-parts-protector",
     "brand": "antiseize",
     "description": [
       "Agente que evita el óxido y la corrosión.",
@@ -784,7 +784,7 @@
   {
     "name": "FOOD MACHINARIES GREASE (Grado alimenticio)",
     "categories": ["Multi-purpose grease for wide temperature"],
-    "alias": "Productos",
+    "alias": "food-machinery-lube",
     "brand": "antiseize",
     "description": [
       "Grasa blanca diseñada para su utilización en el uso de procesamiento de alimentos y drogas.",
@@ -796,7 +796,7 @@
   {
     "name": "SG ONE",
     "categories": ["Multi-purpose grease for wide temperature"],
-    "alias": "Productos",
+    "alias": "siliconas",
     "brand": "antiseize",
     "description": [
       "Grasa de silicona con PTFE.",

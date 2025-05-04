@@ -58,14 +58,6 @@ async function page() {
             );
           })}
         </ul>
-
-        {/* <div className="w-[50%] h-[500px] m-auto">
-          <iframe
-            src="brochure_food_oil.pdf"
-            className="w-full h-full"
-            title="PDF Viewer"
-          />
-        </div> */}
       </article>
     </>
   );

@@ -1,6 +1,7 @@
 import Image from "next/image";
 import petro from "@/public/petro_canada.webp";
 import ngr from "@/public/ngr.webp";
+import exp from "@/public/exp.jpg";
 
 function page() {
   return (
@@ -26,7 +27,7 @@ function page() {
         <div className="w-full">
           <p className=" break-words ">
             Contamos con una gran variedad y amplitud de productos NRG OIL,
-            ENERGY PETROCANADA (Canada), Q7 (Perú).
+            ENERGY PETROCANADA (Canada), Q7 (Perú) y Antiseize (USA).
           </p>
 
           <p className="py-5">
@@ -37,8 +38,14 @@ function page() {
         </div>
       </div>
 
-      <div className="w-full py-20 px-10 md:px-[15%] ">
-        <p className=" w-44  text-3xl  font-bold  ">+15 AÑOS EN EL MERCADO</p>
+      <div className="flex items-center gap-6 w-full py-20 px-10 md:px-[15%] ">
+        {/* <p className=" w-44  text-3xl  font-bold  ">+15 AÑOS EN EL MERCADO</p> */}
+
+        <Image
+          src={exp}
+          alt="más de 15 años de experiencia"
+          className="rounded-md"
+        />
 
         <ul className="py-6">
           <li>

@@ -1,9 +1,10 @@
 import "./globals.css";
-import { Montserrat } from "next/font/google";
+import { Source_Sans_3 } from "next/font/google";
 import Navigation from "./Components/Navigation";
 import Footer from "./Components/Footer";
+import Welcome from "./Components/Welcome";
 
-const monserrat = Montserrat({ weight: "400", subsets: ["latin"] });
+const mon = Source_Sans_3({ weight: "400", subsets: ["latin"] });
 
 export const metadata = {
   title: "Lubricantes Especiales Del Perú",
@@ -28,7 +29,7 @@ export default function RootLayout({ children }) {
           sizes="<generated>"
         />
       </head>
-      <body className={monserrat.className}>
+      <body className={mon.className}>
         <Navigation />
         <main className="min-h-screen">{children}</main>
         <Footer></Footer>

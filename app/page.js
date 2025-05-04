@@ -1,21 +1,20 @@
 import Hero from "./Components/Hero";
 import Image from "next/image";
-import ProductSection from "./Components/ProductSection";
 import Mision from "./Components/Mision";
+import PhotoCarousel from "./Components/PhotoCarousel";
 
 export default function Home() {
   return (
     <>
       <Hero />
 
-      <div className="flex flex-col items-center gap-7 m-auto pt-20 pb-20 w-3/4 ">
+      <div className="flex flex-col items-center gap-7 m-auto pt-12 w-3/4 ">
         <p className="text-3xl font-bold text-yellow-200 rounded-sm bg-black px-10 text-center py-4">
           Lubricantes especiales del Perú SAC
         </p>
         <h2 className=" font-bold text-yellow-400">
           COMBINAMOS EXPERIENCIA E INNOVACIÓN
         </h2>
-
         <div className=" ">
           <p className=" ">
             Lubricantes Especiales del Perú, con participación en los sectores
@@ -36,6 +35,7 @@ export default function Home() {
       </div>
 
       {/* <ProductSection /> */}
+      <PhotoCarousel></PhotoCarousel>
 
       <Mision></Mision>
 

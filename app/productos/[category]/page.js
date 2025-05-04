@@ -18,7 +18,7 @@ export default async function page({ params }) {
   });
 
   const logos = {
-    "Petro-Canada": {
+    petrocanada: {
       src: "/petro_canada.webp",
       w: "50px",
     },
@@ -28,7 +28,7 @@ export default async function page({ params }) {
       w: "92px",
       h: "40px",
     },
-    Q7: {
+    q7: {
       src: "/q7.jpg",
       w: "50px",
       h: "50px",
@@ -39,7 +39,7 @@ export default async function page({ params }) {
     <div className="grid md:grid-cols-2 justify-center gap-4 my-8 mx-4">
       {correctProducts.map((p, index) => (
         <div className="flex justify-center " key={index}>
-          <div className=" rounded-md max-w-md min-w-[300px] w-full md:w-[500px] p-4 shadow-sm shadow-slate-200">
+          <div className=" rounded-md max-w-md min-w-[300px] w-full  bg-white/90  md:w-[500px] p-4 shadow-sm shadow-slate-200">
             <div>
               <img
                 src={logos[p.brand]?.src}

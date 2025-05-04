@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function ProductCard({ title, imgPath, productPath }) {
   return (
-    <div className=" max-w-80 max-h-[400px]  pb-12">
+    <div className=" max-w-80 max-h-[400px] pb-12 ">
       <div className="relative flex h-full">
         <Image
           src={imgPath}
