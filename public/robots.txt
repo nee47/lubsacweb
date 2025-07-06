@@ -1,0 +1,17 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://lubsacweb.com/sitemap.xml
+
+# Disallow admin and API routes
+Disallow: /api/
+Disallow: /login
+Disallow: /auth
+
+# Allow all other pages
+Allow: /productos/
+Allow: /servicios/
+Allow: /acerca/
+Allow: /bases/
+Allow: /contacto/ 

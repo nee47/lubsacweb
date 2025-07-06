@@ -28,7 +28,7 @@ function Navigation() {
         {/* THE BURGUER MENU */}
         <button
           onClick={toggleNav}
-          className="md:hidden fixed right-4 top-4 z-50 text-black "
+          className="md:hidden absolute right-2 top-6 z-50 text-black bg-white p-2 rounded-md shadow-md"
         >
           <svg
             className="block  fill-current"
@@ -43,8 +43,8 @@ function Navigation() {
 
         <div
           className={`${
-            clicked ? "right-0 py-4 " : "-right-[100%]"
-          } flex flex-col fixed border-t border-t-slate-300 border-b-2 border-b-slate-400 md:border-none pl-6 transition-all top-14 z-40 bg-white duration-700 md:flex md:static md:flex-row justify-center md:size-auto md:m-0 gap-y-10  gap-x-4 px-12`}
+            clicked ? "right-0 py-4 " : "-right-[110%]"
+          } flex flex-col fixed border-t border-t-slate-300 border-b-2 border-b-slate-400 md:border-none pl-6 transition-all top-14 z-40 bg-white duration-500 md:flex md:static md:flex-row justify-center md:size-auto md:m-0 gap-y-10  gap-x-4 px-12`}
         >
           <Link onClick={toggleNav} href="/">
             <div className="text-sm py-2 px-24 md:px-1 hover:text-yellow-600 rounded-sm">
