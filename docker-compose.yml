@@ -1,0 +1,19 @@
+services:
+  lubsacweb:
+    build: .
+    container_name: lubsacweb
+    restart: always
+    environment:
+      NODE_ENV: production
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.lubsacweb.rule=Host(`lubricantesespecialesdelperu.com`) || Host(`www.lubricantesespecialesdelperu.com`)"
+      - "traefik.http.routers.lubsacweb.entrypoints=websecure"
+      - "traefik.http.routers.lubsacweb.tls.certresolver=myresolver"
+      - "traefik.http.services.lubsacweb.loadbalancer.server.port=3000"
+    networks:
+      - traefik-public
+
+networks:
+  traefik-public:
+    external: true
