@@ -31,7 +31,7 @@ export default async function CategoryGroupByBrand({ brand }) {
   return (
     <section className="flex flex-wrap gap-6 px-6 pb-10 justify-center">
       {unique.map((c, index) => (
-        <FadeUp>
+        <FadeUp key={index}>
           <Link
             href={`${brand}/${c.alias}`}
             key={index}

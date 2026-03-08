@@ -1,5 +1,6 @@
 import getData from "@/app/lib/getData";
 export const dynamicParams = false;
+import Image from "next/image";
 
 export async function generateStaticParams() {
   const categories = await getData("categorias.json");
@@ -41,12 +42,14 @@ export default async function page({ params }) {
         <div className="flex justify-center " key={index}>
           <div className=" rounded-md max-w-md min-w-[300px] w-full  bg-white/90  md:w-[500px] p-4 shadow-sm shadow-slate-200">
             <div>
-              <img
+              <Image
                 src={logos[p.brand]?.src}
                 alt="logo"
+                width={100}
+                height={100}
                 className={`w-[${logos[p.brand]?.w}] h-[${
                   logos[p.brand]?.h
-                }] object-cover max-h-12`}
+                }] object-cover max-h-16`}
               />
               <h1 className="font-bold text-2xl mb-4 py-2 h-20 border-b border-b-slate-200 ">
                 {p.name}
