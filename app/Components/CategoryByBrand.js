@@ -15,8 +15,8 @@ export default async function CategoryByBrand({ category, productos }) {
       {/* debajo de esto */}
 
       {productos?.map((p, index) => (
-        <FadeUp>
-          <article key={index} className="flex flex-col gap-4 mt-10">
+        <FadeUp key={index}>
+          <article className="flex flex-col gap-4 mt-10">
             <div className="flex flex-col md:flex-row items-center gap-10 md:w-[800px] bg-white  border-b border-slate-400  p-8 rounded-md">
               <h3 className="font-bold w-[270px] flex-shrink-0">{p.name}</h3>
 
