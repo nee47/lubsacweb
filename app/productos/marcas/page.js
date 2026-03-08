@@ -1,54 +1,96 @@
 import Image from "next/image";
 import Link from "next/link";
 
-export default function page() {
-  // ORDEN
-  // Hidraulicas
-  // Transmision
-  // OTHERS
-  // Grasas
+export default function Page() {
+  const brands = [
+    {
+      name: "NRG OIL ENERGY",
+      logo: "/ngr.webp",
+      href: "/productos/marcas/nrg",
+    },
+    {
+      name: "PETRO-CANADA",
+      logo: "/petro_canada.webp",
+      href: "/productos/marcas/petrocanada",
+    },
+    {
+      name: "Q7 OILS",
+      logo: "/q7.jpg",
+      href: "/productos/marcas/q7",
+    },
+    {
+      name: "ANTI-SEIZE",
+      logo: "/anti.jpeg",
+      href: "/productos/marcas/antiseize",
+    },
+  ];
 
   return (
-    <div className="flex gap-8 py-8 items-center p-4">
-      <Link href="/productos/marcas/nrg">
-        <Image
-          alt=""
-          src="/ngr.webp"
-          width={200}
-          height={100}
-          className="shadow-md hover:scale-110 transition-transform ease-in fade-in1 rounded-md"
-        />
-      </Link>
+    <div className=" ">
+      <div className="grid grid-cols-1 md:grid-cols-2 border border-neutral-800">
+        {brands.map((brand, i) => (
+          <Link
+            key={i}
+            href={brand.href}
+            className="
+            group
+            relative
+            h-[300px]
+            border-neutral-800
+            border
+            p-10
+            flex
+            flex-col
+            justify-between
+            bg-gradient-to-br
+            from-zinc-900
+            to-black
+            hover:brightness-125
+            transition-all
+            duration-300
+            "
+          >
+            {/* logo */}
+            <Image
+              src={brand.logo}
+              alt={brand.name}
+              width={100}
+              height={60}
+              className="object-contain bg-white opacity-90"
+            />
 
-      <Link href="/productos/marcas/petrocanada">
-        <Image
-          alt=""
-          src="/petro_canada.webp"
-          width={150}
-          height={90}
-          className="shadow-md hover:scale-110 bg-white transition-transform ease-in fade-in2 rounded-md"
-        />
-      </Link>
+            {/* text */}
+            <div>
+              <h3 className="text-xl font-bold text-white tracking-wider">
+                {brand.name}
+              </h3>
+            </div>
 
-      <Link href="/productos/marcas/q7">
-        <Image
-          alt=""
-          src="/q7.jpg"
-          width={145}
-          height={100}
-          className="shadow-md hover:scale-110 transition-transform ease-in fade-in3 rounded-md"
-        />
-      </Link>
-
-      <Link href="/productos/marcas/antiseize">
-        <Image
-          alt=""
-          src="/anti.jpeg"
-          width={145}
-          height={100}
-          className="shadow-md hover:scale-110 transition-transform ease-in fade-in4 rounded-md"
-        />
-      </Link>
+            {/* arrow */}
+            <div
+              className="
+            absolute
+            bottom-8
+            right-8
+            w-10
+            h-10
+            border
+            border-neutral-500
+            rounded-full
+            flex
+            items-center
+            justify-center
+            text-neutral-300
+            group-hover:border-yellow-400
+            group-hover:text-yellow-400
+            transition
+            "
+            >
+              →
+            </div>
+          </Link>
+        ))}
+      </div>
     </div>
   );
 }

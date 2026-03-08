@@ -5,10 +5,10 @@ import { motion, AnimatePresence } from "framer-motion";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const images = [
-  "/carousel/1.jpg",
-  "/carousel/2.jpg",
-  "/carousel/3.jpg",
-  "/carousel/4.jpg",
+  "/carousel/1.webp",
+  "/carousel/2.webp",
+  "/carousel/3.webp",
+  "/carousel/4.webp",
 ];
 
 export default function PhotoCarousel() {
@@ -41,7 +41,7 @@ export default function PhotoCarousel() {
   };
 
   return (
-    <div className="relative md:w-[500px] my-8  max-w-2xl mx-4 md:mx-auto overflow-hidden rounded-2xl shadow-lg bg-black aspect-[3/4]">
+    <div className="relative md:w-[500px] mt-36 max-w-2xl overflow-hidden rounded-2xl shadow-lg bg-black aspect-[3/4]">
       <AnimatePresence initial={false} custom={direction}>
         <motion.img
           key={index}

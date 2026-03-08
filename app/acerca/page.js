@@ -5,61 +5,176 @@ import exp from "@/public/exp.jpg";
 
 function page() {
   return (
-    <div className="flex flex-col">
-      <section className="w-full  bg-yellow-500/30 py-12 px-16 md:px-[15%]">
-        <h1 className=" text-2xl font-bold my-2 px-4 ">¿QUIENES SOMOS?</h1>
-        <p className="text-base md:text-lg px-4 max-w-3xl">
-          LUBRICANTES ESPECIALES DEL PERÚ SAC, con RUC: 20523985842. Es uno de
-          los mayores distribuidores de Lubricantes Industriales, con
-          participación en los sectores de Minería, Transporte, Industria,
-          Construcción, Pesca, Metalmecánica, Textil y otros sectores que
-          participan en la generación de bienes y servicios.
-        </p>
-      </section>
-
-      <div className="flex flex-col items-center  px-10 py-10 md:px-[15%] md:py-16 gap-y-4 gap-x-12 ">
-        <div className=" flex flex-wrap items-center justify-center  gap-4 ">
-          <Image src={petro} alt="" className="min-w-32 w-32 h-auto" />
-          <Image src={ngr} alt="" className="min-w-44 w-44 h-auto" />
-          <Image src="q7.jpg" alt="q7 oils" width={130} height={130} />
-        </div>
-
-        <div className="w-full">
-          <p className=" break-words ">
-            Contamos con una gran variedad y amplitud de productos NRG OIL,
-            ENERGY PETROCANADA (Canada), Q7 (Perú) y Antiseize (USA).
-          </p>
-
-          <p className="py-5">
-            Marcas que cuentan con un portafolio completo de grasas y aceites de
-            próxima generación: sinteticos ,semi-sintéticos, sanitarios y
-            biodegradables.
-          </p>
-        </div>
-      </div>
-
-      <div className="flex items-center gap-6 w-full py-20 px-10 md:px-[15%] ">
-        {/* <p className=" w-44  text-3xl  font-bold  ">+15 AÑOS EN EL MERCADO</p> */}
-
-        <Image
-          src={exp}
-          alt="más de 15 años de experiencia"
-          className="rounded-md"
+    <div className="flex flex-col pt-20 bg-white">
+      {/* HERO — Quiénes Somos */}
+      <section className="relative w-full py-20 px-8 md:px-[15%] overflow-hidden border-b border-gray-100">
+        {/* Background subtle grid */}
+        <div
+          className="absolute inset-0 opacity-[0.03]"
+          style={{
+            backgroundImage:
+              "linear-gradient(#000 1px, transparent 1px), linear-gradient(90deg, #000 1px, transparent 1px)",
+            backgroundSize: "40px 40px",
+          }}
         />
 
-        <ul className="py-6">
-          <li>
-            ✅ Asesoría técnica a través de nuestros ingenieros para la correcta
-            utilización de nuestros productos
-          </li>
-          <li>✅ Guías de lubricación para sus maquinarias y/o equipos.</li>
-          <li>
-            ✅ Programas de Diagnósticos de Equipos vía Análisis de muestras de
-            aceite en uso.
-          </li>
-          <li>✅ Certificación de eliminación de residuos.</li>
-        </ul>
-      </div>
+        <div className="relative max-w-4xl">
+          <div className="flex items-center gap-3 mb-6">
+            <div className="h-px w-10 bg-yellow-300" />
+            <span className="text-xs font-semibold tracking-[0.25em] text-yellow-500 uppercase">
+              Sobre Nosotros
+            </span>
+          </div>
+
+          <h1 className="text-4xl md:text-5xl font-black tracking-tight text-gray-900 mb-6 leading-tight">
+            Líderes en{" "}
+            <span className="relative inline-block">
+              <span className="relative z-10">Lubricación Industrial</span>
+              <span className="absolute bottom-1 left-0 w-full h-3 bg-yellow-200 -z-0 opacity-60" />
+            </span>
+          </h1>
+
+          <p className="text-base md:text-lg text-gray-600 leading-relaxed max-w-3xl">
+            <strong className="text-gray-900">
+              LUBRICANTES ESPECIALES DEL PERÚ SAC
+            </strong>{" "}
+            <span className="inline-flex items-center gap-1 text-sm bg-yellow-50 border border-yellow-200 text-yellow-700 font-mono px-2 py-0.5 rounded mx-1">
+              RUC 20523985842
+            </span>{" "}
+            es uno de los principales distribuidores de lubricantes industriales
+            del país. Operamos en los sectores de{" "}
+            <span className="text-gray-900 font-medium">
+              Minería, Transporte, Industria, Construcción, Pesca, Metalmecánica
+              y Textil
+            </span>
+            , respaldando la generación de bienes y servicios con productos de
+            la más alta calidad técnica.
+          </p>
+        </div>
+      </section>
+
+      {/* MARCAS */}
+      <section className="w-full py-16 px-8 md:px-[15%] bg-gray-50 border-b border-gray-100">
+        <div className="flex items-center gap-3 mb-10">
+          <div className="h-px w-10 bg-yellow-300" />
+          <span className="text-xs font-semibold tracking-[0.25em] text-yellow-500 uppercase">
+            Nuestras Marcas
+          </span>
+        </div>
+
+        <div className="flex flex-col md:flex-row md:items-center gap-10">
+          {/* Logos */}
+          <div className="flex flex-wrap items-center justify-start gap-8 md:gap-10">
+            <div className="bg-white rounded-lg border border-gray-200 p-4 shadow-sm hover:shadow-md hover:border-yellow-300 transition-all duration-200">
+              <Image
+                src={petro}
+                alt="Petro Canada"
+                className="h-12 w-auto object-contain"
+              />
+            </div>
+            <div className="bg-white rounded-lg border border-gray-200 p-4 shadow-sm hover:shadow-md hover:border-yellow-300 transition-all duration-200">
+              <Image
+                src={ngr}
+                alt="NRG Oil"
+                className="h-12 w-auto object-contain"
+              />
+            </div>
+            <div className="bg-white rounded-lg border border-gray-200 p-4 shadow-sm hover:shadow-md hover:border-yellow-300 transition-all duration-200">
+              <Image
+                src="/q7.jpg"
+                alt="Q7 Oils"
+                width={96}
+                height={48}
+                className="h-12 w-auto object-contain"
+              />
+            </div>
+          </div>
+
+          {/* Texto */}
+          <div className="flex-1 border-l-0 md:border-l border-gray-200 md:pl-10">
+            <p className="text-gray-700 leading-relaxed mb-3">
+              Distribuimos{" "}
+              <strong className="text-gray-900">
+                NRG OIL, PETROCANADA (Canadá), Q7 (Perú)
+              </strong>{" "}
+              y <strong className="text-gray-900">Antiseize (EE. UU.)</strong> —
+              marcas con portafolios completos de lubricantes de última
+              generación.
+            </p>
+            <p className="text-gray-600 text-sm leading-relaxed">
+              Aceites y grasas sintéticos, semi-sintéticos, sanitarios y
+              biodegradables para cada necesidad industrial.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* SERVICIOS */}
+      <section className="w-full py-16 px-8 md:px-[15%]">
+        <div className="flex items-center gap-3 mb-10">
+          <div className="h-px w-10 bg-yellow-300" />
+          <span className="text-xs font-semibold tracking-[0.25em] text-yellow-500 uppercase">
+            Servicios Técnicos
+          </span>
+        </div>
+
+        <div className="flex flex-col md:flex-row gap-10 items-start">
+          {/* Imagen */}
+          <div className="relative md:w-80 flex-shrink-0">
+            <div className="absolute -top-2 -left-2 w-full h-full border-2 border-yellow-300 rounded-lg" />
+            <Image
+              src={exp}
+              alt="Más de 15 años de experiencia"
+              className="relative rounded-lg w-full h-auto object-cover shadow-md"
+            />
+            <div className="absolute bottom-4 left-4 bg-yellow-300 text-gray-900 font-black text-sm px-3 py-1.5 rounded tracking-wide shadow">
+              +15 AÑOS DE EXPERIENCIA
+            </div>
+          </div>
+
+          {/* Lista de servicios */}
+          <div className="flex-1 grid grid-cols-1 sm:grid-cols-2 gap-4">
+            {[
+              {
+                icon: "⚙️",
+                title: "Asesoría Técnica Especializada",
+                desc: "Ingenieros especializados para la correcta selección y uso de lubricantes en cada aplicación.",
+              },
+              {
+                icon: "📋",
+                title: "Guías de Lubricación",
+                desc: "Documentación técnica personalizada para sus maquinarias y equipos productivos.",
+              },
+              {
+                icon: "🔬",
+                title: "Diagnóstico de Equipos",
+                desc: "Análisis de muestras de aceite en uso para detectar fallas y optimizar la vida útil.",
+              },
+              {
+                icon: "♻️",
+                title: "Gestión de Residuos",
+                desc: "Certificación oficial de eliminación de residuos con cumplimiento normativo.",
+              },
+            ].map((item, i) => (
+              <div
+                key={i}
+                className="group bg-white border border-gray-200 rounded-lg p-5 hover:border-yellow-300 hover:shadow-md transition-all duration-200"
+              >
+                <div className="flex items-center gap-3 mb-2">
+                  <span className="text-xl">{item.icon}</span>
+                  <h3 className="font-bold text-gray-900 text-sm leading-tight">
+                    {item.title}
+                  </h3>
+                </div>
+                <p className="text-gray-500 text-sm leading-relaxed">
+                  {item.desc}
+                </p>
+                <div className="mt-3 h-0.5 w-0 bg-yellow-300 group-hover:w-full transition-all duration-300 rounded" />
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
     </div>
   );
 }

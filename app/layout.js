@@ -1,5 +1,5 @@
 import "./globals.css";
-import { Source_Code_Pro, Nunito_Sans } from "next/font/google";
+import { Source_Code_Pro, Montserrat } from "next/font/google";
 import Navigation from "./Components/Navigation";
 import Footer from "./Components/Footer";
 import Welcome from "./Components/Welcome";
@@ -10,9 +10,9 @@ const sourceSans = Source_Code_Pro({
   variable: "--font-source-sans",
 });
 
-const playfair = Nunito_Sans({
-  weight: ["400", "600", "700"],
+const playfair = Montserrat({
   subsets: ["latin"],
+  display: "swap",
   variable: "--font-playfair",
 });
 

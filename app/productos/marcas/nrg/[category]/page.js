@@ -1,6 +1,7 @@
 import getData from "@/app/lib/getData";
 import CategoryByBrand from "@/app/Components/CategoryByBrand";
 import { redirect } from "next/navigation";
+import FadeUp from "@/app/Components/FadeUpComp";
 
 export default async function page({ params }) {
   const { category } = params;

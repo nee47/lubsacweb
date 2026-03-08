@@ -11,8 +11,6 @@ import CategoryGroupByBrand from "@/app/Components/CategoryGroupByBrand";
 export default async function page() {
   return (
     <div className="flex flex-col items-center gap-24 relative ">
-      <div className="absolute inset-0  filter brightness-50 hue"></div>
-
       <div>
         <Image
           src="/anti.jpeg"

@@ -3,23 +3,22 @@ import Link from "next/link";
 export default function TabBar() {
   return (
     <>
-      <ul className="flex flex-col gap-x-2 w-[400px] text-sm font-medium text-center  shadow sm:flex-row">
+      <ul className="flex w-[400px] text-sm font-medium sm:flex-row text-center">
         <li className="w-full focus-within:z-10">
           <Link
             href="/productos/marcas"
-            className="inline-block w-full p-4 rounded-lg border-s-0 bg-white border-gray-200 focus:ring-2 focus:outline-none focus:ring-yellow-300 hover:bg-gray-100"
+            className="inline-block rounded-md w-full p-4 bg-zinc-800 border border-zinc-700 text-yellow-300 focus:bg-yellow-300 focus:text-zinc-800 focus:border-yellow-600"
           >
-            Por Marcas
+            POR MARCAS
           </Link>
         </li>
 
         <li className="w-full focus-within:z-10">
           <Link
-            href="/productos/"
-            className="inline-block w-full p-4 text-gray-900 bg-white rounded-lg rounded-s-lg focus:ring-2 focus:ring-yellow-300 active focus:outline-none hover:bg-gray-100"
-            aria-current="page"
+            href="/productos"
+            className="inline-block rounded-md w-full p-4 bg-zinc-800 border border-zinc-700 text-yellow-300 focus:bg-yellow-300 focus:text-zinc-800 focus:border-yellow-600 "
           >
-            Por tipo de industria
+            POR INDUSTRIA
           </Link>
         </li>
       </ul>

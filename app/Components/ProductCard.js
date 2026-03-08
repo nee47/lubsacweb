@@ -11,9 +11,9 @@ export default function ProductCard({ title, imgPath, productPath }) {
           alt="producto"
           width={300}
           height={400}
-          className="my-auto"
+          className="my-auto w-auto"
         />
-        <div className="flex absolute inset-0  opacity-0 bg-black md:hover:opacity-80">
+        <div className="flex absolute inset-0 opacity-0 bg-black md:hover:opacity-80">
           <Link
             href={productPath}
             className="flex  m-auto w-40 h-10 items-center justify-center font-bold text-white text-xs border  md:border-yellow-100 md:text-yellow-100 bg-black hover:text-black hover:bg-yellow-50 "

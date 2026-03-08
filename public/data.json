@@ -308,7 +308,7 @@
     ],
     "key_advantages": "Antimicrobial product protection preserving the lubricant from degradation.",
     "brand": "petrocanada",
-    "img": "/petropurityfgaw.png"
+    "img": "/petropurityfgaw.webp"
   },
 
   {
@@ -327,7 +327,7 @@
     "description": [
       "Aceite para engranjes cerrados tornillo sin fin, helicoidales, cónicoss y dientes rectos."
     ],
-    "img": "/petropurityfgepgearr.png"
+    "img": "/petropurityfgepgearr.webp"
   },
   {
     "name": "PURITY FG Synthetic EP Gear Fluid",
@@ -343,7 +343,7 @@
     "key_advantages": "Antimicrobial product protection preserving the lubricant from degradation.",
     "brand": "petrocanada",
     "description": ["Aceite sintético para engranjes.", "ISO 220"],
-    "img": "/petropurityfgepgear.jpeg"
+    "img": "/petropurityfgepgear.webp"
   },
 
   {
@@ -366,7 +366,7 @@
       "H1 registrado por la NSF",
       "FDA 21 CFR 178.3570 para lubricantes en contacto accidental con los alimentos."
     ],
-    "img": "/petrosyn.jpg"
+    "img": "/petrosyn.webp"
   },
   {
     "name": "PURITY FG Chain Fluid",
@@ -499,7 +499,7 @@
     "alias": "engranajes-industriales",
     "brand": "nrg",
     "description": ["Aceite de engranjes industriales.", "Con aditivos EP."],
-    "img": "/nrg_ci.jpg"
+    "img": "/nrg_ci.webp"
   },
 
   {

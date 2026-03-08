@@ -8,36 +8,37 @@ export default function Home() {
     <>
       <Hero />
 
-      <div className="flex flex-col items-center gap-7 m-auto pt-12 w-3/4 ">
-        <p className="text-3xl font-bold text-yellow-200 rounded-sm bg-black px-10 text-center py-4">
-          Lubricantes especiales del Perú SAC
-        </p>
-        <h2 className=" font-bold text-yellow-400">
-          COMBINAMOS EXPERIENCIA E INNOVACIÓN
+      <section className="flex flex-col p-14 m-auto mt-36 max-w-[900px] ">
+        <h2 className="text-3xl font-bold">
+          Lubricantes especiales del Perú S.A.C.
         </h2>
-        <div className=" ">
+        <h3 className="font-bold pt-4">COMBINAMOS EXPERIENCIA E INNOVACIÓN</h3>
+        <div className="text-zinc-600">
           <p className=" ">
-            Lubricantes Especiales del Perú, con participación en los sectores
-            de Minería, transporte, Industria, Construcción, Pesca,
-            Metalmecánica, textil y otros.
+            En Lubricantes Especiales del Perú participamos activamente en
+            diversos sectores productivos como minería, transporte, industria,
+            construcción, pesca, metalmecánica, textil, entre otros.
           </p>
-          <p className=" py-4">
-            Contamos con una gran variedad y amplitud de productos NRG oil
-            energy, Petrocanada, Q7 y Anti-Seize.
+          <p className="py-4">
+            Ofrecemos una amplia variedad de lubricantes y soluciones
+            especializadas, trabajando con marcas reconocidas como NRG Oil
+            Energy, Petro-Canada, Q7 y Anti-Seize.
           </p>
 
           <p>
-            Marcas que cuentan con un portafolio completo de grasas y aceites de
-            próxima generación: sintéticos, semi-sintéticos, sanitarios y
-            biodegradables.
+            Nuestro portafolio incluye grasas y aceites de última generación,
+            diseñados para brindar máximo rendimiento y protección en
+            condiciones exigentes, incluyendo productos sintéticos,
+            semi-sintéticos, sanitarios y biodegradables.
           </p>
         </div>
-      </div>
+      </section>
 
       {/* <ProductSection /> */}
-      <PhotoCarousel></PhotoCarousel>
-
-      <Mision></Mision>
+      <div className="flex flex-wrap items-center justify-center gap-x-8">
+        <PhotoCarousel />
+        <Mision></Mision>
+      </div>
 
       <div className=" my-16 mx-auto">
         <h2 className=" text-center font-bold">Representantes exclusivos</h2>
@@ -45,23 +46,16 @@ export default function Home() {
           <Image
             width={150}
             height={50}
-            className=""
-            src="petro_canada.webp"
-            alt=""
+            src="/petro_canada.webp"
+            alt="petro canada logo"
           />
-          <Image
-            width={250}
-            height={150}
-            className=""
-            src="ngr.webp  "
-            alt=""
-          />
-          <Image width={150} height={80} className="" src="q7.jpg" alt="" />
+          <Image width={250} height={150} src="/ngr.webp" alt="nrg logo" />
+          <Image width={150} height={80} src="/q7.jpg" alt="q7 logo" />
           <Image
             width={150}
             height={150}
-            src="anti.jpeg"
-            alt="anti-seize marca"
+            src="/anti.jpeg"
+            alt="antiseize logo"
           ></Image>
           {/* <Image width={150} height={80} className="" src="adinol.png" alt="" /> */}
         </div>

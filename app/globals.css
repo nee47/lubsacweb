@@ -71,3 +71,22 @@
 .fade-in4 {
   animation: f2 2s ease-out;
 }
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-up {
+  opacity: 0; /* estado inicial */
+}
+
+.fade-up.animate {
+  animation: fadeUp 0.8s ease-out forwards;
+}
