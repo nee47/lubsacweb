@@ -110,7 +110,9 @@ function Navigation() {
               src={logo}
               alt="Logo de lubricantes especiales del Peru"
             />
-            <div className="font-bold text-sm tracking-wide">EXPERTOS EN LUBRICACION</div>
+            <div className="font-bold text-sm tracking-wide">
+              EXPERTOS EN LUBRICACION
+            </div>
           </div>
         </Link>
 
@@ -179,7 +181,11 @@ function Navigation() {
                 {productsOpenMobile && (
                   <div className="md:hidden mt-2 ml-3 border-l-2 border-yellow-300 pl-3 flex flex-col gap-2">
                     {productSubmenu.map((item) => (
-                      <Link key={item.ref} href={item.ref} onClick={handleLinkClick}>
+                      <Link
+                        key={item.ref}
+                        href={item.ref}
+                        onClick={handleLinkClick}
+                      >
                         <span className="text-sm text-neutral-600 hover:text-yellow-700 transition-colors">
                           {item.title}
                         </span>
@@ -193,7 +199,7 @@ function Navigation() {
         </div>
       </nav>
 
-      <div className="h-[100px]"></div>
+      <div className="h-[95px] w-full "></div>
     </header>
   );
 }

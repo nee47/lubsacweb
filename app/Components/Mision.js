@@ -1,10 +1,10 @@
 export default function Mision() {
   return (
-    <div className="flex flex-col max-w-[500px] gap-4 px-6 md:px-0">
+    <div className="flex flex-col max-w-[500px] gap-4 px-6 md:px-0 text-zinc-700">
       <h2 className="text-4xl font-bold text-yellow-400 ">MISIÓN</h2>
       <p>
         La calidad es la base de todas las actividades en Lubricantes Especiales
-        del Peru SAC. Nuestro mayor objetivo es la satisfacción de nuestros
+        del Peru S.A.C. Nuestro mayor objetivo es la satisfacción de nuestros
         clientes.
       </p>
       <p>

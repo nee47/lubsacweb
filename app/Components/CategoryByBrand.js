@@ -8,7 +8,7 @@ export default function CategoryByBrand({ category, productos }) {
         {productos.map((p, index) => (
           <article
             key={index}
-            className="flex flex-col bg-white border border-neutral-100 rounded-2xl overflow-hidden hover:shadow-xl transition-shadow"
+            className="group flex flex-col bg-white border border-neutral-100 rounded-2xl overflow-hidden hover:shadow-xl transition-shadow"
           >
             <div className="flex p-6 gap-6 flex-1">
               <div className="w-32 h-40 relative flex-shrink-0 bg-neutral-50 rounded-lg p-2">
@@ -32,10 +32,7 @@ export default function CategoryByBrand({ category, productos }) {
 
                 <div className="space-y-1 mb-4">
                   {p.description?.slice(0, 2).map((d, i) => (
-                    <p
-                      key={i}
-                      className="text-neutral-500 text-sm line-clamp-2"
-                    >
+                    <p key={i} className="text-neutral-500 text-sm mb-4">
                       • {d}
                     </p>
                   ))}
@@ -45,9 +42,7 @@ export default function CategoryByBrand({ category, productos }) {
 
             {/* Footer de la Card con detalles técnicos */}
             <div className="bg-neutral-50 px-6 py-4 flex justify-between items-center border-t border-neutral-100">
-              <button className="text-sm font-bold text-neutral-800 hover:text-yellow-600 transition-colors">
-                Ver Ficha Técnica
-              </button>
+              <button className="text-sm font-bold text-neutral-800 hover:text-yellow-600 transition-colors"></button>
               <div className="flex gap-2">
                 {p.registrations?.map((reg) => (
                   <span

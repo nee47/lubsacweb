@@ -11,23 +11,32 @@ export default function Home() {
 
       <div className="flex flex-col flex-wrap justify-center items-center pt-28">
         <FadeUp duration="0">
-          <section className="flex flex-col px-6 py-10 md:p-14 m-auto mt-20 md:mt-28 max-w-[900px]">
-            <h2 className="text-3xl font-bold text-center">
+          <section className="relative flex flex-col items-center px-6 py-10 md:p-14 m-auto mt-20 md:mt-28 max-w-[900px]">
+            <h2 className="text-3xl font-bold text-center uppercase">
               Lubricantes especiales del Peru S.A.C.
             </h2>
             <h3 className="font-bold pt-4 text-yellow-500 text-center">
-              COMBINAMOS EXPERIENCIA E INNOVACION
+              Combinamos experiencia e innovación
             </h3>
-            <div className="text-zinc-500 flex gap-x-4 pt-10">
+            <Image
+              src="/newlogo.jpg"
+              width={300}
+              height={300}
+              alt="Lubricantes especiales dle Peru logo"
+            />
+            <div className=" text-zinc-800 flex flex-col items-center md:flex-row  gap-x-4 pt-10">
               <p
-                className="border border-zinc-200 border-t-transparent rounded-lg p-4 hover:border hover:border-yellow-400 hover:border-t-transparent hover:px-6
+                className="max-w-[400px] bg-white/40 backdrop-blur-md back border border-zinc-200 border-t-transparent rounded-lg p-4 hover:border hover:border-yellow-400 hover:border-t-transparent hover:-translate-y-1
               transition-all duration-300 hover:text-black"
               >
                 Ofrecemos una amplia variedad de lubricantes y soluciones
                 especializadas, trabajando con marcas reconocidas como NRG Oil
                 Energy, Petro-Canada, Q7 y Anti-Seize.
               </p>
-              <p className="border border-zinc-200 border-b-transparent hover:border-b-transparent rounded-lg p-4 hover:border hover:border-yellow-400 transition-all hover:px-6 duration-300 hover:text-black">
+              <p
+                className="max-w-[400px] bg-white/40 backdrop-blur-md border border-zinc-200 border-b-transparent rounded-lg p-4 hover:border hover:border-yellow-400 hover:border-b-transparent hover:-translate-y-1
+              transition-all duration-300 hover:text-black"
+              >
                 Nuestro portafolio incluye grasas y aceites de ultima
                 generacion, disenados para brindar maximo rendimiento y
                 proteccion en condiciones exigentes, incluyendo productos
@@ -45,7 +54,7 @@ export default function Home() {
         </div>
       </FadeUp>
 
-      <div className="my-16 mx-auto px-6">
+      <div className="my-44 mx-auto px-6">
         <h2 className="text-center font-bold text-lg">
           Representantes exclusivos
         </h2>

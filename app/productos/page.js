@@ -6,8 +6,6 @@ export default async function Page() {
   const products = await getData("data.json");
   const cats = await getData("categorias.json");
 
-  console.log(cats);
-
   // Group by alias, deduplicate using a Map to ensure uniqueness
   const industriesMap = new Map();
 

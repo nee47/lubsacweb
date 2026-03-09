@@ -15,7 +15,7 @@ export default function Services() {
       {/* HERO */}
       <section className="relative w-full h-[350px] flex items-center justify-center text-center">
         <Image
-          src="/bgi.jpg"
+          src="/categories/turbina_hidraulica.jpg"
           fill
           className="object-cover brightness-50"
           alt="Servicios lubricantes industriales"
@@ -29,7 +29,7 @@ export default function Services() {
           <p className="mt-6 text-lg md:text-xl text-white/90">
             En{" "}
             <span className="font-semibold">
-              Lubricantes Especiales del Perú
+              Lubricantes Especiales del Perú{" "}
             </span>
             ofrecemos soluciones integrales de lubricación industrial enfocadas
             en mejorar el rendimiento de sus equipos y optimizar costos

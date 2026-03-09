@@ -8,16 +8,6 @@ function page() {
     <div className="flex flex-col bg-white">
       {/* HERO — Quiénes Somos */}
       <section className="relative w-full py-20 px-8 md:px-[15%] overflow-hidden border-b border-gray-100">
-        {/* Background subtle grid */}
-        <div
-          className="absolute inset-0 opacity-[0.03]"
-          style={{
-            backgroundImage:
-              "linear-gradient(#000 1px, transparent 1px), linear-gradient(90deg, #000 1px, transparent 1px)",
-            backgroundSize: "40px 40px",
-          }}
-        />
-
         <div className="relative max-w-4xl">
           <div className="flex items-center gap-3 mb-6">
             <div className="h-px w-10 bg-yellow-300" />
@@ -26,11 +16,10 @@ function page() {
             </span>
           </div>
 
-          <h1 className="text-4xl md:text-5xl font-black tracking-tight text-gray-900 mb-6 leading-tight">
+          <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight text-gray-900 mb-6 leading-tight">
             Líderes en{" "}
             <span className="relative inline-block">
               <span className="relative z-10">Lubricación Industrial</span>
-              <span className="absolute bottom-1 left-0 w-full h-3 bg-yellow-200 -z-0 opacity-60" />
             </span>
           </h1>
 

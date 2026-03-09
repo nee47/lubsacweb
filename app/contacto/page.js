@@ -16,11 +16,10 @@ export default function page() {
                 Contáctanos
               </span>
             </div>
-            <h1 className="text-4xl md:text-5xl font-black tracking-tight text-gray-900 leading-tight">
+            <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight text-gray-900 leading-tight">
               Estamos para{" "}
               <span className="relative inline-block">
                 <span className="relative z-10">ayudarte</span>
-                <span className="absolute bottom-1 left-0 w-full h-3 bg-yellow-200 -z-0 opacity-60" />
               </span>
             </h1>
             <p className="mt-3 text-gray-500 text-base max-w-md">

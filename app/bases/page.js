@@ -1,22 +1,16 @@
 import Image from "next/image";
-import bg from "@/public/bg2.webp";
 import bases1 from "@/public/bases1.jpg";
 
 export default function page() {
   return (
-    <section className="py-6 max-w-6xl m-auto">
-      <div className="relative w-fit rounded-md">
-        <Image
-          className="h-44 object-cover filter brightness-50 rounded-md"
-          src={bg}
-          alt="factory background"
-        />
-        <div className="flex items-center justify-center absolute inset-0 m-auto">
-          <h1 className="font-bold text-3xl text-white">BASES LUBRICANTES</h1>
+    <section className="py-20 ">
+      <div className="relative w-full rounded-md">
+        <div className=" justify-center absolute inset-0 mx-auto max-w-4xl">
+          <h1 className="font-bold text-4xl md:text-5xl">BASES LUBRICANTES</h1>
         </div>
       </div>
 
-      <div className="py-16 px-[5%]">
+      <div className="py-24 max-w-4xl mx-auto">
         <h2 className="font-bold text-2xl mb-4">Tipos de acites Básicos</h2>
         <ul className="flex flex-col gap-y-2">
           <li>Aceites básicos API Grupo I</li>
@@ -34,7 +28,7 @@ export default function page() {
         </ul>
       </div>
 
-      <article className="px-[5%]">
+      <article className="max-w-4xl mx-auto">
         <h2 className="font-bold text-xl">Fabricación de aceites básicos</h2>
         <Image
           className=" max-w-48"

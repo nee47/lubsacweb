@@ -36,14 +36,6 @@ export default function Hero() {
           width={500}
           height={400}
         />
-
-        <Image
-          src="/bg2.webp" // Path to your hover image in the public folder
-          alt="Hover image"
-          layout="fill"
-          objectFit="cover"
-          className="absolute rounded-md top-0 left-0 transition-opacity duration-700 ease-in-out opacity-0 group-hover:opacity-100"
-        />
       </FadeUp>
     </div>
   );
