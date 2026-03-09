@@ -4,28 +4,47 @@ import FadeUp from "./FadeUpComp";
 
 export default function Hero() {
   return (
-    <div className="relative flex flex-wrap justify-center items-center pt-[25%] lg:pt-[10%] ">
-      <div className="">
-        <div className="relative z-20 py-8 pl-6 md:max-w-md ">
-          <h1 className="text-black text-5xl font-bold select-none">
-            ESPECIALISTAS EN ACEITES INDUSTRIALES
+    <div className="relative flex flex-wrap gap-x-12 justify-center items-center pt-[7%]">
+      <FadeUp>
+        <div className=" py-8 pl-6 max-w-[760px]">
+          <h1 className="text-zinc-800 text-5xl font-bold select-none leading-[50px]">
+            Especialistas en lubricantes industriales
           </h1>
 
-          <Link href="productos/marcas">
+          <p className="mt-4 text-zinc-500">
+            En Lubricantes Especiales del Perú participamos activamente en
+            diversos sectores productivos como minería, transporte, industria,
+            construcción, pesca, metalmecánica, textil, entre otros.
+          </p>
+
+          <Link href="productos">
             <div className="mt-8 rounded-sm text-sm text-center w-[200px] text-zinc-700 p-2 bg-yellow-200 hover:bg-opacity-70">
               Conocer productos
             </div>
           </Link>
         </div>
-      </div>
+      </FadeUp>
 
-      <Image
-        className="rounded-md w-auto"
-        src="/bg1.jpg"
-        alt="generic background image"
-        width={500}
-        height={400}
-      />
+      <FadeUp
+        duration={"0.21s"}
+        className="relative group cursor-pointer overflow-hidden"
+      >
+        <Image
+          className="rounded-md w-auto px-4 md:px-0"
+          src="/bg1.jpg"
+          alt="generic background image"
+          width={500}
+          height={400}
+        />
+
+        <Image
+          src="/bg2.webp" // Path to your hover image in the public folder
+          alt="Hover image"
+          layout="fill"
+          objectFit="cover"
+          className="absolute rounded-md top-0 left-0 transition-opacity duration-700 ease-in-out opacity-0 group-hover:opacity-100"
+        />
+      </FadeUp>
     </div>
   );
 }

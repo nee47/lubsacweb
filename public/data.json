@@ -50,7 +50,8 @@
       "Aceite mineral para compresores de aire tipo pistón.",
       "Para temperaturas de descarga de 150° C ",
       "Vida util 2000 horas."
-    ]
+    ],
+    "img": "/q7_cilindro.webp"
   },
 
   {
@@ -250,7 +251,8 @@
       "Fluido dieléctrico procedente de USA.",
       "Para acabados del tipo mate",
       "Vida útil 3 años."
-    ]
+    ],
+    "img": "/q7_cilindro.webp"
   },
   {
     "categories": ["electroerosión"],
@@ -263,7 +265,8 @@
       "Color transparente.",
       "Bajo porcentaje de azufre",
       "Vida útil 3 años."
-    ]
+    ],
+    "img": "/q7_cilindro.webp"
   },
 
   {
@@ -515,7 +518,8 @@
       "- Mandos finales",
       "- Transmisiones powershift",
       "Norma Caterpillar Tractor TO-4"
-    ]
+    ],
+    "img": "/nrg_ci.webp"
   },
   {
     "name": "NRG GUARDIAM 32 46 68 100 220",
@@ -580,7 +584,8 @@
     "categories": ["Multi-purpose grease for wide temperature"],
     "alias": "fluidos-hidraulicos",
     "brand": "q7",
-    "description": ["Aceite mineral base II.", "Vida útil 8000 horas.", "HLP"]
+    "description": ["Aceite mineral base II.", "Vida útil 8000 horas.", "HLP"],
+    "img": "/q7_cilindro.webp"
   },
 
   {
@@ -592,7 +597,8 @@
       "Aceite premium para la lubricación de engranajes cerrados.",
       "Resistencia a la formación de espuma.",
       "Adhitivos del tipo azufre-fósforo."
-    ]
+    ],
+    "img": "/q7_cilindro.webp"
   },
   {
     "name": "Q7 TRANSYN 68 100 150 220 320 460",
@@ -602,7 +608,8 @@
     "description": [
       "Aceite sintético para transmisiones.",
       "Temperatura de operación 80° C."
-    ]
+    ],
+    "img": "/q7_cilindro.webp"
   },
 
   {
@@ -613,7 +620,8 @@
     "description": [
       "Gran adhesividad 'aceite de no salpicado'",
       "ISO 32 para guías lineales."
-    ]
+    ],
+    "img": "/q7_cilindro.webp"
   },
   {
     "name": "COP GRAF",

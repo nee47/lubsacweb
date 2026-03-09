@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Services() {
   const services = [
@@ -12,7 +13,7 @@ export default function Services() {
   return (
     <div className="bg-white">
       {/* HERO */}
-      <section className="relative w-full pt-20 h-[380px] flex items-center justify-center text-center">
+      <section className="relative w-full h-[350px] flex items-center justify-center text-center">
         <Image
           src="/bgi.jpg"
           fill
@@ -97,9 +98,12 @@ export default function Services() {
             metalmecánica.
           </p>
 
-          <button className="mt-8 bg-yellow-300 hover:bg-yellow-400 transition px-6 py-3 rounded-lg font-semibold">
+          <Link
+            href="/contacto"
+            className="mt-8 inline-block bg-yellow-300 hover:bg-yellow-400 transition px-6 py-3 rounded-lg font-semibold"
+          >
             Solicitar asesoría
-          </button>
+          </Link>
         </div>
       </section>
     </div>

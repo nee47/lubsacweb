@@ -4,11 +4,12 @@ import logo from "@/public/newlogo.jpg";
 import igcon from "@/public/ig_icon.png";
 import ttcon from "@/public/tt_icon.png";
 import WhatsAppButton from "./WhatsappButton";
+import Link from "next/link";
 
 function Footer() {
   return (
     <footer className="bg-white border-t border-slate-200 mt-20">
-      <div className="max-w-7xl mx-auto px-6 py-14 grid grid-cols-1 md:grid-cols-4 gap-10">
+      <div className="max-w-7xl mx-auto px-6 py-14 grid grid-cols-2 md:grid-cols-4 gap-10">
         {/* LOGO + INFO */}
 
         {/* NAVEGACIÓN */}
@@ -17,34 +18,39 @@ function Footer() {
 
           <ul className="space-y-2 text-sm text-slate-600">
             <li>
-              <a href="/" className="hover:text-black transition">
+              <Link href="/" className="hover:text-black transition">
                 Inicio
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/productos" className="hover:text-black transition">
+              <Link href="/productos" className="hover:text-black transition">
                 Productos
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/servicios" className="hover:text-black transition">
+              <Link href="/marcas" className="hover:text-black transition">
+                Marcas
+              </Link>
+            </li>
+            <li>
+              <Link href="/servicios" className="hover:text-black transition">
                 Servicios
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/nosotros" className="hover:text-black transition">
+              <Link href="/acerca" className="hover:text-black transition">
                 Nosotros
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/informacion" className="hover:text-black transition">
+              <Link href="/acerca" className="hover:text-black transition">
                 Información
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/contacto" className="hover:text-black transition">
+              <Link href="/contacto" className="hover:text-black transition">
                 Contacto
-              </a>
+              </Link>
             </li>
           </ul>
         </div>

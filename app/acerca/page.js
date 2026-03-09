@@ -5,7 +5,7 @@ import exp from "@/public/exp.jpg";
 
 function page() {
   return (
-    <div className="flex flex-col pt-20 bg-white">
+    <div className="flex flex-col bg-white">
       {/* HERO — Quiénes Somos */}
       <section className="relative w-full py-20 px-8 md:px-[15%] overflow-hidden border-b border-gray-100">
         {/* Background subtle grid */}

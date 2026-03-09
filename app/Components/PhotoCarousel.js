@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
@@ -20,11 +20,6 @@ export default function PhotoCarousel() {
     setIndex((prev) => (prev + newDirection + images.length) % images.length);
   };
 
-  useEffect(() => {
-    const interval = setInterval(() => paginate(1), 5000);
-    return () => clearInterval(interval);
-  }, []);
-
   const variants = {
     enter: (dir) => ({
       x: dir > 0 ? 300 : -300,
@@ -41,8 +36,8 @@ export default function PhotoCarousel() {
   };
 
   return (
-    <div className="relative md:w-[500px] mt-36 max-w-2xl overflow-hidden rounded-2xl shadow-lg bg-black aspect-[3/4]">
-      <AnimatePresence initial={false} custom={direction}>
+    <div className="relative md:w-[500px] mt-12 md:mt-24 max-w-2xl overflow-hidden rounded-2xl shadow-lg bg-black aspect-[3/4]">
+      <AnimatePresence initial={false} custom={direction} mode="wait">
         <motion.img
           key={index}
           src={images[index]}

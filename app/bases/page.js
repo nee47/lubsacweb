@@ -4,7 +4,7 @@ import bases1 from "@/public/bases1.jpg";
 
 export default function page() {
   return (
-    <section className="py-6 pt-20 max-w-6xl m-auto">
+    <section className="py-6 max-w-6xl m-auto">
       <div className="relative w-fit rounded-md">
         <Image
           className="h-44 object-cover filter brightness-50 rounded-md"

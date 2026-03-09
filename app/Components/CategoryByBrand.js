@@ -1,40 +1,67 @@
 import Image from "next/image";
-import BackButton from "./BackArrow";
-import FadeUp from "./FadeUpComp";
+// Components/CategoryByBrand.js
 
-export default async function CategoryByBrand({ category, productos }) {
-  const cat = category.charAt(0).toUpperCase() + category.slice(1);
-
+export default function CategoryByBrand({ category, productos }) {
   return (
-    <section className="m-4 p-20 bg-zinc-100 rounded-sm">
-      <BackButton></BackButton>
-      <h1 className="text-4xl p-4 mt-4 md:w-[50%] bg-black/80 rounded-sm text-white font-semibold">
-        {cat.replaceAll("-", " ")}
-      </h1>
-
-      {/* debajo de esto */}
-
-      {productos?.map((p, index) => (
-        <FadeUp key={p.name ?? index}>
-          <article className="flex flex-col gap-4 mt-10">
-            <div className="flex flex-col md:flex-row items-center gap-10 md:w-[800px] bg-white border-b border-slate-400 p-8 rounded-md">
-              <h3 className="font-bold w-[270px] flex-shrink-0">{p.name}</h3>
-
-              <div>
-                {p.description?.map((d, i) => (
-                  <p key={i} className="text-slate-600 text-sm">
-                    {d}
-                  </p>
-                ))}
+    <section className="max-w-7xl mx-auto px-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        {productos.map((p, index) => (
+          <article
+            key={index}
+            className="flex flex-col bg-white border border-neutral-100 rounded-2xl overflow-hidden hover:shadow-xl transition-shadow"
+          >
+            <div className="flex p-6 gap-6 flex-1">
+              <div className="w-32 h-40 relative flex-shrink-0 bg-neutral-50 rounded-lg p-2">
+                <Image
+                  src={p.img || "/placeholder-oil.png"}
+                  alt={p.name}
+                  fill
+                  className="object-contain"
+                />
               </div>
 
-              {p.img && (
-                <Image src={p.img} width={200} height={250} alt={p.name} />
-              )}
+              <div className="flex flex-col flex-1">
+                <div className="flex justify-between items-start mb-2">
+                  <span className="px-2 py-1 bg-yellow-100 text-yellow-700 text-[10px] font-bold uppercase rounded">
+                    {p.brand}
+                  </span>
+                </div>
+                <h3 className="font-bold text-lg leading-tight text-neutral-900 mb-3">
+                  {p.name}
+                </h3>
+
+                <div className="space-y-1 mb-4">
+                  {p.description?.slice(0, 2).map((d, i) => (
+                    <p
+                      key={i}
+                      className="text-neutral-500 text-sm line-clamp-2"
+                    >
+                      • {d}
+                    </p>
+                  ))}
+                </div>
+              </div>
+            </div>
+
+            {/* Footer de la Card con detalles técnicos */}
+            <div className="bg-neutral-50 px-6 py-4 flex justify-between items-center border-t border-neutral-100">
+              <button className="text-sm font-bold text-neutral-800 hover:text-yellow-600 transition-colors">
+                Ver Ficha Técnica
+              </button>
+              <div className="flex gap-2">
+                {p.registrations?.map((reg) => (
+                  <span
+                    key={reg}
+                    className="text-[9px] bg-white border border-neutral-200 px-2 py-1 rounded text-neutral-600 font-bold"
+                  >
+                    {reg}
+                  </span>
+                ))}
+              </div>
             </div>
           </article>
-        </FadeUp>
-      ))}
+        ))}
+      </div>
     </section>
   );
 }

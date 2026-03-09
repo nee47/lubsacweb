@@ -1,90 +1,78 @@
-import ByCategories from "../Components/ByCategories";
+// productos/page.js
+import getData from "../lib/getData";
+import Link from "next/link";
 
-import Image from "next/image";
+export default async function Page() {
+  const products = await getData("data.json");
+  const cats = await getData("categorias.json");
 
-async function page() {
-  const brochures = [
-    { img: "/brochure1.webp", pdf: "brochure_food_oil.pdf" },
-    {
-      title: "Metalmecánica",
-      img: "/brochure2.webp",
-      pdf: "CATALOGO_METALMECANICA.pdf",
-    },
-    {
-      title: "ACEITES SOLUBLES",
-      img: "/SOLUBLES.webp",
-      pdf: "SOLUBLES.pdf",
-    },
-    {
-      title: "FLUIDOS DE ELECTROEROSION",
-      img: "/electro.jpg",
-      pdf: "CATALOGO_FLUIDOS_DE_ELECTROEROSION.pdf",
-    },
-    { title: "hidráulicas", img: "/hidraulica.webp", pdf: "hidraulica.pdf" },
-    {
-      title: "Compresores de aire",
-      img: "/compresores.jpg",
-      pdf: "compresores_de_aire.pdf",
-    },
-    {
-      title: "Aceites de proceso",
-      img: "/proceso.jpg",
-      pdf: "aceite_proceso.pdf",
-    },
-    { title: "Grasas", img: "/grasas.jpg", pdf: "grasas.pdf" },
-  ];
+  console.log(cats);
+
+  // Group by alias, deduplicate using a Map to ensure uniqueness
+  const industriesMap = new Map();
+
+  for (const p of products) {
+    const key = p.alias.toLowerCase().trim();
+    industriesMap.set(key, (industriesMap.get(key) || 0) + 1);
+  }
+
+  // Convert to array and sort by name
+  const industriesArray = Array.from(industriesMap.entries())
+    .map(([alias, count]) => ({
+      alias,
+      count,
+    }))
+    .sort((a, b) => a.alias.localeCompare(b.alias));
 
   return (
-    <>
-      <ByCategories />
-      <article className="w-full">
-        <h1 className="text-4xl font-bold py-4 text-center"> Brochures</h1>
+    <div className="max-w-7xl mx-auto px-4 py-12">
+      <header className="text-center mb-16">
+        <h1 className="text-4xl font-extrabold text-neutral-900 mb-4">
+          Catalogo de Productos
+        </h1>
+        <p className="text-neutral-500 max-w-2xl mx-auto">
+          Soluciones de alta ingenieria para mantenimiento industrial, grado
+          alimenticio y procesos especiales.
+        </p>
+      </header>
 
-        <ul className="flex flex-wrap justify-center mx-auto mt-20 gap-6 max-w-[1000px]">
-          {brochures.map((item, index) => {
-            if (!item.title) {
-              return (
-                <li key={index}>
-                  <a target="_blank" href={item?.pdf}>
-                    <div className="w-[200px] h-[280px] hover:scale-105 transition-transform">
-                      <Image
-                        src={item.img}
-                        width={200}
-                        height={280}
-                        alt="purity brochure pdf"
+      {industriesArray.length === 0 ? (
+        <p className="text-center text-neutral-400 text-lg">
+          No hay categorias disponibles.
+        </p>
+      ) : (
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          {industriesArray.map(({ alias, count }) => (
+            <Link key={alias} href={`/productos/${alias}`}>
+              <div className="group bg-white border border-neutral-200 p-8 rounded-2xl hover:shadow-2xl hover:-translate-y-1 transition-all duration-300">
+                <h3 className="text-2xl font-bold capitalize h-16 text-neutral-800 group-hover:text-yellow-600">
+                  {alias.replaceAll("-", " ")}
+                </h3>
+                <div className="flex justify-between pt-10 items-center h-full ">
+                  <span className="text-neutral-400 font-medium">
+                    {count} Productos
+                  </span>
+                  <span className="bg-neutral-50 group-hover:bg-yellow-100 p-2 rounded-full transition-colors">
+                    <svg
+                      className="w-5 h-5 text-yellow-600"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M9 5l7 7-7 7"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
                       />
-                    </div>
-                  </a>
-                </li>
-              );
-            }
-
-            return (
-              <li key={index} className="">
-                <a target="_blank" href={item?.pdf}>
-                  <div className=" group w-[200px] h-[280px] flex flex-col items-center justify-around rounded-l-lg p-4 bg-gradient-to-b from-black to-zinc-700 hover:scale-105 transition-transform">
-                    <h3 className="text-yellow-200 text-sm font-bold ">
-                      Lubricantes Especiales Del Perú S.A.C.
-                    </h3>
-                    <Image
-                      src="/newlogo.jpg"
-                      className="rounded-full h-auto group-hover:shadow-xl group-hover:shadow-yellow-200"
-                      width={60}
-                      height={60}
-                      alt="logo lubricantes especiales del peru"
-                    />
-                    <p className="text-white text-lg uppercase group-hover:underline group-hover:underline-offset-4 font-bold p-2 text-center">
-                      {item.title}
-                    </p>
-                  </div>
-                </a>
-              </li>
-            );
-          })}
-        </ul>
-      </article>
-    </>
+                    </svg>
+                  </span>
+                </div>
+              </div>
+            </Link>
+          ))}
+        </div>
+      )}
+    </div>
   );
 }
-
-export default page;

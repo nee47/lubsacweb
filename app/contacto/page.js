@@ -5,7 +5,7 @@ import WhatsAppButton from "../Components/WhatsappButton";
 
 export default function page() {
   return (
-    <div className="flex flex-col pt-20 bg-white min-h-screen">
+    <div className="flex flex-col bg-white min-h-screen">
       {/* Header */}
       <section className="relative w-full py-16 px-8 md:px-[15%] border-b border-gray-100 overflow-hidden">
         <div className="relative flex flex-col md:flex-row md:items-center md:justify-between gap-8">
