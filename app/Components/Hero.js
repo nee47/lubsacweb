@@ -4,7 +4,7 @@ import FadeUp from "./FadeUpComp";
 
 export default function Hero() {
   return (
-    <div className="relative flex flex-wrap gap-x-12 justify-center items-center pt-[7%]">
+    <div className=" flex flex-col md:flex-row gap-x-12 justify-center items-center pt-[7%]">
       <FadeUp>
         <div className=" py-8 pl-6 max-w-[760px]">
           <h1 className="text-zinc-800 text-5xl font-bold select-none leading-[50px]">

@@ -15,7 +15,7 @@ export default function FadeUp({ children, duration }) {
           setIsVisible(true);
         }
       },
-      { threshold: 0.5 },
+      { threshold: 0.42 },
     );
 
     if (element) observer.observe(element);
