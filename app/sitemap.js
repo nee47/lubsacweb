@@ -1,8 +1,9 @@
 import getData from './lib/getData';
+import { BRAND_CONFIG } from './marcas/brandConfig';
 
 export default async function sitemap() {
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://lubsacweb.com';
-  
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://lubricantesespecialesdelperu.com';
+
   // Static pages
   const staticPages = [
     {
@@ -18,7 +19,7 @@ export default async function sitemap() {
       priority: 0.9,
     },
     {
-      url: `${baseUrl}/productos/marcas`,
+      url: `${baseUrl}/marcas`,
       lastModified: new Date(),
       changeFrequency: 'weekly',
       priority: 0.9,
@@ -50,32 +51,12 @@ export default async function sitemap() {
   ];
 
   // Brand pages
-  const brandPages = [
-    {
-      url: `${baseUrl}/productos/marcas/nrg`,
-      lastModified: new Date(),
-      changeFrequency: 'weekly',
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}/productos/marcas/petrocanada`,
-      lastModified: new Date(),
-      changeFrequency: 'weekly',
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}/productos/marcas/q7`,
-      lastModified: new Date(),
-      changeFrequency: 'weekly',
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}/productos/marcas/antiseize`,
-      lastModified: new Date(),
-      changeFrequency: 'weekly',
-      priority: 0.8,
-    },
-  ];
+  const brandPages = BRAND_CONFIG.map((brand) => ({
+    url: `${baseUrl}/marcas/${brand.slug}`,
+    lastModified: new Date(),
+    changeFrequency: 'weekly',
+    priority: 0.8,
+  }));
 
   // Product category pages
   let categoryPages = [];
@@ -91,37 +72,9 @@ export default async function sitemap() {
     console.error('Error loading categories for sitemap:', error);
   }
 
-  // Brand-category combination pages (only valid combinations)
-  let brandCategoryPages = [];
-  try {
-    const products = await getData('data.json');
-    const validCombinations = new Set();
-    
-    // Extract valid brand-category combinations from actual product data
-    products.forEach(product => {
-      if (product.brand && product.alias) {
-        validCombinations.add(`${product.brand}-${product.alias}`);
-      }
-    });
-    
-    // Convert to URLs
-    brandCategoryPages = Array.from(validCombinations).map(combination => {
-      const [brand, category] = combination.split('-');
-      return {
-        url: `${baseUrl}/productos/marcas/${brand}/${category}`,
-        lastModified: new Date(),
-        changeFrequency: 'weekly',
-        priority: 0.6,
-      };
-    });
-  } catch (error) {
-    console.error('Error loading brand-category combinations for sitemap:', error);
-  }
-
   return [
     ...staticPages,
     ...brandPages,
     ...categoryPages,
-    ...brandCategoryPages,
   ];
-} 
+}

@@ -3,7 +3,7 @@ import bases1 from "@/public/bases1.jpg";
 
 export default function page() {
   return (
-    <section className="py-20 ">
+    <section className="py-20 mx-8 md:mx-0 ">
       <div className="relative w-full rounded-md">
         <div className=" justify-center absolute inset-0 mx-auto max-w-4xl">
           <h1 className="font-bold text-4xl md:text-5xl">BASES LUBRICANTES</h1>

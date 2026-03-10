@@ -13,5 +13,6 @@ Disallow: /auth
 Allow: /productos/
 Allow: /servicios/
 Allow: /acerca/
+Allow: /marcas/
 Allow: /bases/
 Allow: /contacto/ 

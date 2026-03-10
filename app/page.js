@@ -10,7 +10,7 @@ export default function Home() {
       <Hero />
 
       <div className="flex flex-col flex-wrap justify-center items-center pt-28">
-        <FadeUp duration="0">
+        <FadeUp duration="0.2s">
           <section className="relative flex flex-col items-center px-6 py-10 md:p-14 m-auto mt-20 md:mt-28 max-w-[900px]">
             <h2 className="text-3xl font-bold text-center uppercase">
               Lubricantes especiales del Peru S.A.C.

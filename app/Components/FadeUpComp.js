@@ -15,7 +15,7 @@ export default function FadeUp({ children, duration, ...props }) {
           setIsVisible(true);
         }
       },
-      { threshold: 0.42 },
+      { threshold: 0.15 },
     );
 
     if (element) observer.observe(element);
@@ -31,7 +31,7 @@ export default function FadeUp({ children, duration, ...props }) {
       style={{ transitionDelay: duration }}
       className={`
         transition-all ease-out duration-1000 
-        ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-14"}
+        ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-24"}
       `}
       {...props}
     >
