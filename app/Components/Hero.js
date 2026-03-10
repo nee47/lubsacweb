@@ -4,9 +4,9 @@ import FadeUp from "./FadeUpComp";
 
 export default function Hero() {
   return (
-    <div className=" flex flex-col md:flex-row gap-x-12 justify-center items-center pt-[7%]">
+    <div className=" flex flex-col px-6 md:flex-row gap-x-12 justify-center items-center pt-[7%]">
       <FadeUp>
-        <div className=" py-8 pl-6 max-w-[760px]">
+        <div className=" py-8 max-w-2xl">
           <h1 className="text-zinc-800 text-5xl font-bold select-none leading-[50px]">
             Especialistas en lubricantes industriales
           </h1>
@@ -25,15 +25,12 @@ export default function Hero() {
         </div>
       </FadeUp>
 
-      <FadeUp
-        duration={"0.21s"}
-        className="relative group cursor-pointer overflow-hidden"
-      >
+      <FadeUp duration={"0.21s"}>
         <Image
-          className="rounded-md w-auto px-4 md:px-0"
+          className=" rounded-md "
           src="/bg1.jpg"
           alt="generic background image"
-          width={500}
+          width={600}
           height={400}
         />
       </FadeUp>

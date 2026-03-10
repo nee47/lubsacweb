@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 
-export default function FadeUp({ children, duration }) {
+export default function FadeUp({ children, duration, ...props }) {
   const ref = useRef(null);
   const [isVisible, setIsVisible] = useState(false);
 
@@ -33,6 +33,7 @@ export default function FadeUp({ children, duration }) {
         transition-all ease-out duration-1000 
         ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-14"}
       `}
+      {...props}
     >
       {children}
     </div>
