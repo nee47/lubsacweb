@@ -4,14 +4,14 @@ import Image from "next/image";
 export default function CategoryByBrand({ category, productos }) {
   return (
     <section className="max-w-7xl mx-auto px-4">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div className="flex flex-col gap-8">
         {productos.map((p, index) => (
           <article
             key={index}
-            className="group flex flex-col bg-white border border-neutral-100 rounded-2xl overflow-hidden hover:shadow-xl transition-shadow"
+            className="group flex flex-col bg-white border border-neutral-100 rounded-2xl hover:shadow-xl transition-shadow"
           >
-            <div className="flex p-6 gap-6 flex-1">
-              <div className="w-32 h-40 relative flex-shrink-0 bg-neutral-50 rounded-lg p-2">
+            <div className="flex p-6 gap-6 ">
+              <div className=" w-32 h-40 relative flex-shrink-0 bg-neutral-50 rounded-lg p-2">
                 <Image
                   src={p.img || "/placeholder-oil.png"}
                   alt={p.name}
