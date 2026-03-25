@@ -5,6 +5,15 @@ import FilterSidebar from "@/app/Components/FilterSidebar";
 import { redirect } from "next/navigation";
 import Link from "next/link";
 
+export async function generateMetadata({ params }) {
+  const { industria } = params;
+  const label = industria.replaceAll("-", " ");
+  return {
+    title: `${label.charAt(0).toUpperCase() + label.slice(1)} | Catálogo LUBSAC`,
+    description: `Productos de lubricación industrial para la industria de ${label}. Filtra por marca y encuentra la solución adecuada.`,
+  };
+}
+
 export default async function Page({ params, searchParams }) {
   const { industria } = params;
   const selectedBrand = searchParams?.marca;

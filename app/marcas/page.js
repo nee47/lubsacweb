@@ -2,6 +2,12 @@ import Link from "next/link";
 import getData from "@/app/lib/getData";
 import { BRAND_CONFIG } from "./brandConfig";
 
+export const metadata = {
+  title: "Marcas | LUBSAC",
+  description:
+    "Distribuimos NRG Oil, Petro-Canada, Q7 y Anti-Seize. Explora el catálogo completo de lubricantes por marca.",
+};
+
 export default async function Page() {
   const products = await getData("data.json");
 

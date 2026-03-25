@@ -3,6 +3,12 @@ import petro from "@/public/petro_canada.webp";
 import ngr from "@/public/ngr.webp";
 import exp from "@/public/exp.jpg";
 
+export const metadata = {
+  title: "Acerca de Nosotros | LUBSAC",
+  description:
+    "Conoce a Lubricantes Especiales del Perú SAC: más de 15 años distribuyendo lubricantes industriales de alta calidad en minería, transporte, construcción y más.",
+};
+
 function page() {
   return (
     <div className="flex flex-col bg-white">

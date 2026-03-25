@@ -3,6 +3,12 @@ import Image from "next/image";
 import logo from "@/public/newlogo.jpg";
 import WhatsAppButton from "../Components/WhatsappButton";
 
+export const metadata = {
+  title: "Contacto | LUBSAC",
+  description:
+    "Contáctanos para cotizaciones, consultas técnicas o información sobre nuestros lubricantes industriales. Oficinas en Los Olivos y Santa Anita, Lima.",
+};
+
 export default function page() {
   return (
     <div className="flex flex-col bg-white min-h-screen">
