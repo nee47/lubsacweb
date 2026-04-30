@@ -13,6 +13,8 @@ export default function WhatsAppButton({ number, name }) {
         href={url}
         target="_blank"
         rel="noopener noreferrer"
+        data-event="conversion"
+        data-source="whatsapp-button"
         className="inline-block text-white rounded-lg hover:bg-green-700 transition-colors"
       >
         <svg

@@ -1,11 +1,12 @@
 // productos/page.js
 import getData from "../lib/getData";
 import Link from "next/link";
+import Image from "next/image";
 
 export const metadata = {
-  title: "Catálogo de Productos | LUBSAC",
+  title: "Catálogo de Grasas y Aceites para Metalmecánica en Perú | LUBSAC",
   description:
-    "Explora nuestras líneas de productos industriales: lubricantes, grasas y aceites de alta calidad para todo tipo de industria.",
+    "Explora nuestras líneas de productos industriales en Perú: lubricantes, grasas y aceites de alta calidad especializados para el sector metalmecánica.",
 };
 
 // A subtle icon for each card — using a gear/cog motif fitting industrial context
@@ -101,13 +102,17 @@ export default async function Page() {
                   <div className="p-7">
                     {/* Icon + badge row */}
                     <div className="flex items-start justify-between mb-5">
-                      <div className="w-14 h-14 rounded-xl bg-yellow-50 border border-yellow-100 flex items-center justify-center group-hover:bg-yellow-100 transition-colors">
-                        <IndustryIcon />
-                      </div>
                       <span className="text-xs font-bold bg-neutral-100 text-neutral-500 px-3 py-1 rounded-full tabular-nums">
                         {count} {count === 1 ? "producto" : "productos"}
                       </span>
                     </div>
+
+                    <Image
+                      src={"/cilinder_lubesac.webp"}
+                      width={200}
+                      height={150}
+                      className="mx-auto"
+                    ></Image>
 
                     {/* Name */}
                     <h3 className="text-xl font-extrabold capitalize text-neutral-900 group-hover:text-yellow-600 transition-colors leading-snug mb-2">
@@ -116,9 +121,6 @@ export default async function Page() {
 
                     {/* Divider */}
                     <div className="border-t border-neutral-100 mt-5 pt-5 flex items-center justify-between">
-                      <span className="text-sm text-neutral-400 font-medium">
-                        Ver soluciones
-                      </span>
                       <span className="w-8 h-8 rounded-full bg-neutral-100 group-hover:bg-yellow-400 flex items-center justify-center transition-all duration-300">
                         <svg
                           className="w-4 h-4 text-neutral-500 group-hover:text-neutral-900 transition-colors"

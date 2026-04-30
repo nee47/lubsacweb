@@ -43,13 +43,13 @@ function Footer() {
               </Link>
             </li>
             <li>
-              <Link href="/acerca" className="hover:text-black transition">
-                Información
+              <Link href="/contacto" className="hover:text-black transition">
+                Contacto
               </Link>
             </li>
             <li>
-              <Link href="/contacto" className="hover:text-black transition">
-                Contacto
+              <Link href="/terminos" className="hover:text-black transition">
+                Términos y condiciones
               </Link>
             </li>
           </ul>

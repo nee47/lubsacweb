@@ -13,10 +13,11 @@ export default function Home() {
         <FadeUp duration="0.2s">
           <section className="relative flex flex-col items-center px-6 py-10 md:p-14 m-auto mt-20 md:mt-28 max-w-[900px]">
             <h2 className="text-3xl font-bold text-center uppercase">
-              Lubricantes especiales del Peru S.A.C.
+              Lubricantes Especiales del Perú S.A.C.
             </h2>
+            <h1 className="sr-only">Lubricantes para Metalmecánica en Perú</h1>
             <h3 className="font-bold pt-4 text-yellow-500 text-center">
-              Combinamos experiencia e innovación
+              Soluciones en lubricación para la industria Metalmecánica y Minera
             </h3>
             <Image
               src="/newlogo.jpg"

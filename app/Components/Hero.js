@@ -8,7 +8,7 @@ export default function Hero() {
       <FadeUp>
         <div className=" py-8 max-w-2xl">
           <h1 className="text-zinc-800 text-5xl font-bold select-none leading-[50px]">
-            Especialistas en lubricantes industriales
+            Especialistas en lubricantes para Metalmecánica
           </h1>
 
           <p className="mt-4 text-zinc-500">
@@ -17,7 +17,7 @@ export default function Hero() {
             construcción, pesca, metalmecánica, textil, entre otros.
           </p>
 
-          <Link href="productos">
+          <Link href="productos" data-event="navigation" data-source="hero-cta">
             <div className="mt-8 rounded-sm text-sm text-center w-[200px] text-zinc-700 p-2 bg-yellow-200 hover:bg-opacity-70">
               Conocer productos
             </div>
